@@ -1454,7 +1454,7 @@ pre
   background-image: url('images/postbullets.png');
   background-repeat: no-repeat;
   padding-left: 13px;/* makes "ul li" not to align behind the image if they are in the same line */
-  overflow: auto;
+/*  overflow: auto; */
 }
 
 
