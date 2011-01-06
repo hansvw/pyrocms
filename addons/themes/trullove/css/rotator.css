@@ -1,0 +1,10 @@
+#toprotator
+{
+    float: right;
+    width: 352px;
+    height: 264px;
+    margin: 0px;
+}
+
+.slideshow { height: 264px; width: 352px; margin: auto;}
+.slideshow img { padding: 0px 0px 0px 5px; background-color: #91be24; }
