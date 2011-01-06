@@ -11,7 +11,18 @@ function _render_nav($link_list, $level=0)
 	{
 		foreach($link_list as $link)
 		{
-			$linkclass = ((current_url()==$link->url) ? ' class="active"' : '');
+			if($link->url == site_url())
+			{
+				$linkclass = (current_url() == $link->url) ? ' class="active"' : '';
+			}
+			else
+			{
+				$currenturl = substr(current_url(),strlen(site_url()));
+				$linkurl = substr(current_url(),strlen(site_url()));
+				
+				$pos = strpos($currenturl, $linkurl);
+				$linkclass = ($pos === 0) ? ' class="active"' : '';				
+			}
 			
 			if(null != $link->target && $link->target != '')
 			{
