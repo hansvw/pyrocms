@@ -1,6 +1,8 @@
 <?php
 function _render_nav($link_list, $level=0)
 {
+	var_dump(current_url());
+	
 	if($level == 0)
 	{
 		echo '<ul class="art-menu">';
@@ -11,17 +13,32 @@ function _render_nav($link_list, $level=0)
 	{
 		foreach($link_list as $link)
 		{
+			$linkclass = '';
+			
+		/// Treat link to 'home' differenty
 			if($link->url == site_url())
 			{
-				$linkclass = (current_url() == $link->url) ? ' class="active"' : '';
+				if(current_url() == $link->url)
+				{
+					$linkclass = ' class="active"';
+				}
 			}
 			else
 			{
-				$currenturl = substr(current_url(),strlen(site_url()));
-				$linkurl = substr(current_url(),strlen(site_url()));
+				if(current_url() == $link->url)
+				{
+					$linkclass = ' class="active"';
+				}
+
+				if(strlen($link->url) < strlen(current_url()))
+				{
+					$comparison = substr_compare(current_url(),$link->url,0,strlen($link->url));
 				
-				$pos = strpos($currenturl, $linkurl);
-				$linkclass = ($pos === 0) ? ' class="active"' : '';				
+					if($comparison == 0)
+					{
+						$linkclass = ' class="active"';
+					}
+				}
 			}
 			
 			if(null != $link->target && $link->target != '')
