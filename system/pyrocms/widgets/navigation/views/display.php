@@ -1,8 +1,6 @@
 <?php
 function _render_nav($link_list, $level=0)
 {
-	var_dump(current_url());
-	
 	if($level == 0)
 	{
 		echo '<ul class="art-menu">';
