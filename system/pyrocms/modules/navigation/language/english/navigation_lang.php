@@ -22,6 +22,9 @@ $lang['nav_group_delete_label']                 = 'Delete group';
 $lang['nav_link_target_self']                   = 'Current window (default)';
 $lang['nav_link_target_blank']                  = 'New window (_blank)';
 
+$lang['nav_link_parent']                        = 'Parent link';
+$lang['nav_link_parent_top']                    = '--TOP LEVEL--';
+
 // titles
 $lang['nav_link_create_title']                  = 'Add navigation link';
 $lang['nav_group_create_title']                 = 'Add a group';

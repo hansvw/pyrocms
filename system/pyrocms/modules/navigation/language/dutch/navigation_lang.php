@@ -22,6 +22,9 @@ $lang['nav_group_delete_label']					= 'Verwijder groep';
 $lang['nav_link_target_self'] 					= 'Huidig scherm (default)';
 $lang['nav_link_target_blank'] 					= 'Nieuw scherm (_blank)';
 
+$lang['nav_link_parent']                        = 'Sub-link van';
+$lang['nav_link_parent_top']                    = '--HOOFD NIVEAU--';
+
 // titles
 $lang['nav_link_create_title'] 					= 'Voeg navigatielink toe';
 $lang['nav_group_create_title']					= 'Voeg een groep toe';

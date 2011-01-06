@@ -41,17 +41,41 @@ class Navigation_m extends CI_Model
 			$this->db->where('navigation_group_id', $params['group']);
 		}
 
+        if(!empty($params['parent']))
+        {
+            $this->db->where('parent_link_id', $params['parent']);
+        }
+
 		if(!empty($params['order']))
 		{
 			$this->db->order_by($params['order']);
 		}
-		
 		else
 		{
 			$this->db->order_by('title');
 		}
 
 		$result = $this->db->get('navigation_links')->result();
+
+        // If we only want a simple array with id => title
+        if(isset($params['title_array']) and $params['title_array'])
+        {
+            $return = array();
+            foreach($result as &$row)
+            {
+                $return[$row->id] = $row->title;
+            }
+
+            return $return;
+        }
+        
+        if(isset($params['children']) and $params['children'] == true)
+        {
+            foreach($result as &$row)
+            {
+                $row->children = $this->get_links(array('parent' => $row->id) + $params);
+            }
+        }
 
 		// If we should build the urls
 		if( ! isset($params['make_urls']) or $params['make_urls'])
@@ -82,7 +106,21 @@ class Navigation_m extends CI_Model
 
 		return $result;
 	}
-	
+
+    /**
+     * Get a tree of the links
+     * @param int $navigation_group_id The navigation_group for which to retrieve the tree
+     */
+    function get_links_tree($group)
+    {
+        return $this->get_links(array(
+            'group' => $group,
+            'parent' => '-1',
+            'children' => true,
+            'order' => 'position'
+            ));
+    }
+    
 	/**
 	 * Create a new Navigation Link
 	 * 
@@ -111,7 +149,8 @@ class Navigation_m extends CI_Model
         	'position' 				=> $position,
 			'target'				=> $input['target'],
 			'class'					=> $input['class'],
-        	'navigation_group_id'	=> (int) $input['navigation_group_id']
+        	'navigation_group_id'	=> (int) $input['navigation_group_id'],
+            'parent_link_id'        => (int) $input['parent_link_id']
 		));
         
         return $this->db->insert_id();
@@ -138,7 +177,8 @@ class Navigation_m extends CI_Model
         	'page_id' 				=> (int) $input['page_id'],
 			'target'				=> $input['target'],
 			'class'					=> $input['class'],
-        	'navigation_group_id' 	=> (int) $input['navigation_group_id']
+        	'navigation_group_id' 	=> (int) $input['navigation_group_id'],
+            'parent_link_id'        => (int) $input['parent_link_id']
 		), array('id' => $id));
 	}
 	
@@ -214,7 +254,6 @@ class Navigation_m extends CI_Model
 		return $this->db->delete('navigation_links', $params);
 	}
 
-
 	/**
 	 * Load a group
 	 * 
@@ -256,7 +295,62 @@ class Navigation_m extends CI_Model
 		// Assign it 
 	    return $group_links;
 	}
-	
+
+    /**
+     * Load a group with tree structure
+     * @access public
+     * @param string $abbrev The group abbreviation
+     * @return mixed
+     */
+        public function load_group_tree($abbrev)
+        {
+            $group = $this->get_group_by('abbrev',$abbrev);
+            $group_root = $this->get_links_tree($group->id);
+            $has_current_link = false;
+            if($this->_check_current_links($group_root))
+            {
+                $has_current_link = true;
+            }
+
+            return $group_root;
+        }
+
+	/**
+	 * Function for iterating through the link tree structure to determine which link
+	 * is currently active. Returns true if any provided links are active.
+	 *
+	 * @access private
+	 * @param array $group_links An array of navigation link objects to run through
+	 * @return boolean
+	 */
+        private function _check_current_links(&$group_links)
+        {
+            $has_current_link = false;
+            if( !empty($group_links) )
+            {
+                foreach($group_links as &$link)
+                {
+                    $full_match 	= site_url($this->uri->uri_string()) == $link->uri;
+                    $segment1_match = site_url($this->uri->rsegment(1, '')) == $link->uri;
+
+                    // Either the whole URI matches, or the first segment matches
+                    if($link->current_link = $full_match || $segment1_match)
+                    {
+                        $has_current_link = true;
+                    }
+
+                    // Check if there are any current links in the children too
+                    if(isset($link->children) and $this->_check_current_links($link->children))
+                    {
+                        $has_current_link = true;
+                    }
+                }
+
+            }
+
+            return $has_current_link;
+        }        
+    
 	/**
 	 * Get group by..
 	 * 

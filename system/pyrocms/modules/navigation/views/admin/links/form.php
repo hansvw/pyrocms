@@ -69,7 +69,12 @@
 			<label for="class"><?php echo lang('nav_class_label'); ?></label>
 			<?php echo form_input('class', $navigation_link->class); ?>
 		</li>
-	</ul>
+
+        <li>
+			<label for="parent_link_id"><?php echo lang('nav_link_parent');?></label>
+			<?php echo form_dropdown('parent_link_id', array('-1' => lang('nav_link_parent_top'))+$navigation_links_list, $navigation_link->parent_link_id); ?>
+		</li>
+    </ul>
 
 	<div style="text-align: right">
 		<?php $this->load->view('admin/partials/buttons', array('buttons' => array('save', 'cancel') )); ?>
