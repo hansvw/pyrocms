@@ -1,5 +1,4 @@
 <?php if ($this->settings->ga_tracking): ?>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -13,5 +12,4 @@
   })();
 
 </script>
-
 <?php endif; ?>
