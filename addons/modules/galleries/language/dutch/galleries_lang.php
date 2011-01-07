@@ -13,7 +13,7 @@ $lang['galleries.id_error']				= 'Er zijn geen IDs opgegeven.';
 $lang['galleries.folder_error']			= 'De "%s" gallerij folders konden niet worden verwijderd.';
 $lang['galleries.delete_error']			= 'De "%s" kon niet worden verwijderd.';
 $lang['galleries.no_galleries_error'] 	= 'Er zijn nog geen gallerijen aangemaakt.';
-$lang['galleries.install_error']		= 'De module kon niet worden geinstalleerd.';
+$lang['galleries.install_error']		= 'De module kon niet geinstalleerd worden .';
 
 // Labels
 $lang['galleries.galleries_label']			= 'Gallerijen';
@@ -49,5 +49,5 @@ $lang['galleries.new_gallery_label']		= 'Maak een nieuwe gallerij';
 $lang['galleries.upload_label']				= 'Upload Afbeelding';
 
 // Frontend labels
-$lang['galleries.sub-galleries_label']		= 'Sub Gallerijen';
+$lang['galleries.sub-galleries_label']		= 'Gallerij Onderverdelingen';
 ?>
