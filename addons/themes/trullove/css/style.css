@@ -667,7 +667,7 @@ div.art-content-layout-row
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  text-align: left;
+  text-align: center;
   text-decoration: none !important;
   color: #FFFFFF !important;
   width: auto;
