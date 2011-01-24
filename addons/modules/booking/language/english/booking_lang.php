@@ -4,7 +4,9 @@
 $lang['booking_first_name_label']			= 'First Name';
 $lang['booking_last_name_label']			= 'Last Name';
 $lang['booking_email_label']				= 'Email Address';
-$lang['booking_tel1_label']                 = 'Telephone Number';
+$lang['booking_country_label']              = 'Country';
+$lang['booking_language_label']             = 'Preferred Language';
+$lang['booking_tel1_label']                 = 'Telephone Number (including international dialing code)';
 $lang['booking_tel2_label']                 = 'Alternate Telephone Number';
 $lang['booking_message_label']              = 'Message';
 $lang['booking_send_label']					= 'Submit Reservation';

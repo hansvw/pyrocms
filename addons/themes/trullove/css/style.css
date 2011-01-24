@@ -123,10 +123,6 @@ h6 a, h6 a:link, h6 a:visited, h6 a:hover
   cursor:default;
 }
 
-
-
-
-
 .cleared
 {
   float: none;
@@ -141,6 +137,51 @@ form
 {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* column container */
+form .colmask
+{
+ 	position:relative;		/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;				/* entire redbox width */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+form .colright, form .colmid, form .colleft
+{
+	float:left;
+	width:100%;				/* width of page */
+	position:relative;
+}
+
+form .col1, form .col2, form .col3
+{
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;		/* no left and right padding on columns, we just make them narrower instead
+						only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+
+form .col1
+{
+	width:40%;				/* width of center column content (column width minus padding on either side) */
+	left:0%; 			    /* 100% plus left padding of center column */
+}
+
+form .col2
+{
+	width:40%;				/* Width of left column content (column width minus padding on either side) */
+	left:0%;				/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+
+form .col3 {
+	width:20%;				/* Width of right column content (column width minus padding on either side) */
+	left:0%;				/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 }
 
 table.position

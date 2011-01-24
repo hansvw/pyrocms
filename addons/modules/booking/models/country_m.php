@@ -16,7 +16,7 @@ class Countries_m extends MY_Model
 		
 		foreach($countries as $country)
 		{
-			$results[] = $gallery;
+			$results[] = $country;
 		}
 
 	/// Return the results

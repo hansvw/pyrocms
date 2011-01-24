@@ -14,7 +14,8 @@ class Module_Booking extends Module {
               `country` varchar(255) NOT NULL,
 			  `tel1` varchar(16),
 			  `tel2` varchar(16),
-			  PRIMARY KEY (`id`)
+			  PRIMARY KEY (`id`),
+              UNIQUE KEY `email` (`email`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 		",
         "rspricing" => "
@@ -43,19 +44,11 @@ class Module_Booking extends Module {
 				UNIQUE KEY `name` (`name`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 		",
-        "rsresource" => "
-			CREATE TABLE `rsresource` (
-			  `id` int(11) NOT NULL AUTO_INCREMENT,
-			  `name` varchar(255) NOT NULL,
-			  `description` varchar(255) NOT NULL,
-			  PRIMARY KEY (`id`),
-              UNIQUE KEY `name` (`name`)
-			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-		",
         "rsreservationstatus" => "
 			CREATE TABLE `rsreservationstatus` (
 			  `id` int(11) NOT NULL AUTO_INCREMENT,
 			  `name` varchar(255) NOT NULL,
+              `description` varchar(255) NOT NULL,
 			  PRIMARY KEY (`id`),
 			  UNIQUE KEY `name` (`name`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -65,23 +58,25 @@ class Module_Booking extends Module {
 			  `id` int(11) NOT NULL AUTO_INCREMENT,
 			  `code` varchar(255) NOT NULL,
 			  `person_id` int(11) NOT NULL,
-			  `resource_id` int(11) NOT NULL,
+              `dtreservation` DATETIME NOT NULL,
+              `startdate` DATE NOT NULL,
+              `enddate` DATE NOT NULL,
+              `starttime` TIME DEFAULT NULL,
+              `enddtime` TIME DEFAULT NULL,
 			  `status` varchar(255) NOT NULL,
 			  PRIMARY KEY (`id`),
-			  UNIQUE KEY `code` (`code`),
-			  KEY `resource_id` (`resource_id`)
+			  UNIQUE KEY `code` (`code`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 		",
         "rscalendar" => "
 			CREATE TABLE `rscalendar` (
 			  `id` int(11) NOT NULL AUTO_INCREMENT,
 			  `calendardate` date NOT NULL,
-              `resource_id` int(11) NOT NULL,
-              `resource_name` varchar(255) NOT NULL,
-			  `status` varchar(255) NOT NULL,
+              `reservation_code` varchar(255) DEFAULT NULL,
+			  `reservation_status` varchar(255) NOT NULL,
 			  PRIMARY KEY (`id`),
-			  UNIQUE KEY `calendarresource` (`calendardate`,`resource_id`),
-			  KEY `resource_id` (`resource_id`)
+			  UNIQUE KEY `calendarresource` (`calendardate`),
+              KEY `reservation_code` (`reservation_code`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 		"
     );
@@ -137,6 +132,23 @@ class Module_Booking extends Module {
 			$this->db->query($this->table['rsreservation']) &&
 			$this->db->query($this->table['rscalendar']))
 		{
+            $reservationstatuscodes = array(
+                array(   'name' => 'confirmed',
+                    'description' => 'reservation is confirmed'),
+                array(   'name' => 'cancelled',
+                    'description' => 'reservation has been cancelled'),
+                array(   'name' => 'pending',
+                    'description' => 'reservation has not yet been confirmed')
+            );
+
+            foreach($reservationstatuscodes as $reservationstatus)
+            {
+                if(!$this->db->insert('rsreservationstatus', $reservationstatus))
+                {
+                    return FALSE;
+                }
+            }
+
 			return TRUE;
 		}
 	}

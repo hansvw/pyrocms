@@ -21,6 +21,7 @@ class Booking extends Public_Controller
 	{
 		parent::Public_Controller();
 		$this->lang->load('booking');
+        $this->load->model('availability_m');
 	}
 
 	function index()
@@ -51,6 +52,20 @@ class Booking extends Public_Controller
             'size'  => '50'
         );
 
+        $countryfield = array(
+            'name'  => 'country',
+            'label' => 'lang:booking_country_label',
+            'id'    => 'country',
+            'size'  => '50'
+        );
+
+        $languagefield = array(
+            'name'  => 'language',
+            'label' => 'lang:booking_language_label',
+            'id'    => 'language',
+            'size'  => '50'
+        );
+
         $tel1field = array(
             'name' => 'tel1',
             'label' => 'lang_booking_tel1_label',
@@ -65,24 +80,38 @@ class Booking extends Public_Controller
             'size'  => '16'
         );
 
-        $urlarray = array(
-            '1' => 'www.aivolution.com',
-            '2' => 'www.spatialmachines.net'
+        $arrivaldates = $this->availability_m->getDaysOfWeekDatesInYear("2011", 6);
+
+        $lengthsofstay = array(
+            '1' => '1 week',
+            '2' => '2 weeks',
+            '3' => '3 weeks',
+            '4' => '4 weeks',
+            '5' => '5 weeks',
+            '6' => '6 weeks',
+            '7' => '7 weeks',
+            '8' => '8 weeks'
         );
 
+ 
         $formfields['firstname'] = $firstnamefield;
         $formfields['lastname'] = $lastnamefield;
         $formfields['email'] = $emailfield;
+        $formfields['country'] = $countryfield;
+        $formfields['language'] = $languagefield;
         $formfields['tel1'] = $tel1field;
         $formfields['tel2'] = $tel2field;
 
         $this->form_validation->set_rules('firstname','First Name','required|trim|max_length[80]');
         $this->form_validation->set_rules('lastname','Last Name','required|trim|max_length[100]');
         $this->form_validation->set_rules('email','EMail Address','required|trim|valid_email|max_length[80]');
+        $this->form_validation->set_rules('country','Country', 'required|trim|max_length[80]');
+        $this->form_validation->set_rules('language','Preferred Language', 'trim|max_length[80]');
         $this->form_validation->set_rules('tel1','Telephone Number', 'required|trim|min_length[7]|max_length[16]');
         $this->form_validation->set_rules('tel2','Alternate Telephone Number','trim|max_length[16]');
 
-        $form_values->urlarray = $urlarray;
+        $form_values->arrivaldates = $arrivaldates;
+        $form_values->lengthsofstay = $lengthsofstay;
 
 	/// Validate form
 		if($this->form_validation->run())

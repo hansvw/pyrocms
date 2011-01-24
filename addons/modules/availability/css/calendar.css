@@ -1,0 +1,199 @@
+#calmain table 
+{
+	border-collapse: separate;
+	border: 1px solid #9DABCE;
+	border-width: 0px 0px 1px 1px;
+	margin: 10px auto;
+	font-size: 20px;
+	width: 860px;
+}
+
+#calmain td,#calmain th 
+{
+/*	width: 81px; */
+	width: 128px;
+	height: 70px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../img/cells.png);
+	color: #444;
+	position: relative;
+}
+
+#calmain th 
+{
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#calmain td:hover, #calmain th:hover 
+{
+	background-position: 0px -81px;
+	color: #222;
+}
+
+#calmain td.date_has_pending_reservation
+{
+	background-position: 384px 0px;
+	color: white;
+}
+
+#calmain td.date_has_pending_reservation:hover
+{
+    background-position: 384px -81px;
+}
+
+#calmain td.date_has_confirmed_reservation
+{
+	background-position: 384px 0px;
+	color: white;
+}
+
+#calmain td.date_has_conformed_reservation:hover
+{
+    background-position: 384px -81px;
+    color: white;
+}
+
+#calmain td.date_has_event 
+{
+	background-position: 256px 0px;
+	color: white;
+}
+
+#calmain td.date_has_event:hover 
+{
+	background-position: 256px -81px;
+}
+
+#calmain td.padding 
+{
+	background: url(../img/calpad.jpg);
+}
+
+#calmain td#today 
+{
+/*	background-position: 81px 0px; */
+	background-position: 128px 0px;
+	color: green;
+}
+
+td#today:hover 
+{
+/*	background-position: 81px -81px; */
+	background-position: 128px -81px; 
+}
+
+#calmain .events 
+{
+	position: relative;
+}
+
+#calmain .events ul 
+{
+	text-align: left;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	padding: 15px;
+	background: #E7ECF2 url(../img/popup.png) no-repeat;
+	color: white;
+	border: 1px solid white;
+	font-size: 15px;
+	width: 200px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-border-radius: 3px;
+	list-style: none;
+	color: #444444;
+	-webkit-box-shadow: 0px 8px 8px #333;
+}
+
+#calmain .events li 
+{
+	padding-bottom: 5px;
+}
+
+#calmain .events li span 
+{
+	display: block;
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+
+#calmain .events li span.title 
+{
+	font-weight: bold;
+	color: #222;
+}
+
+#calmain th a
+{
+	text-decoration:none;
+	font-size:120%;
+	font-weight:bold;
+	color: #000;
+	outline-width:0;
+}
+
+#calmain .dayevents
+{
+	border: 1px solid #666666;
+	padding: 10px;
+	text-align: left;
+}
+
+#calmain .dayevents h3
+{
+	background:none repeat scroll 0 0 #303030;
+    color:#FFFFFF;
+    font-weight:normal;
+    letter-spacing:0.15em;
+    padding:10px;
+}
+
+#calmain
+{
+	margin-top: 50px;
+}
+
+#calmain .dayevents
+{
+
+	border-bottom: 2px solid #cccccc;
+
+	margin-bottom: 20px;
+
+	padding: 0 0 20px 0;
+
+
+
+}
+
+#navcontainer ul li 
+{
+    display: inline;
+}
+
+
+#navcontainer ul li a 
+{
+    color: #333333;
+    float: right;
+    letter-spacing: 0.12em;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.date_has_event a{
+    color:#ffffff;
+}
+
+#calmain h2 
+{
+    text-align: center;
+}
