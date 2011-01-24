@@ -51,7 +51,7 @@ class CI_Email {
 	var $send_multipart	= TRUE;		// TRUE/FALSE - Yahoo does not like multipart alternative, so this is an override.  Set to FALSE for Yahoo.
 	var	$bcc_batch_mode	= FALSE;	// TRUE/FALSE  Turns on/off Bcc batch feature
 	var	$bcc_batch_size	= 200;		// If bcc_batch_mode = TRUE, sets max number of Bccs in each batch
-	var $_safe_mode		= TRUE;
+	var $_safe_mode		= FALSE;
 	var	$_subject		= "";
 	var	$_body			= "";
 	var	$_finalbody		= "";
@@ -61,7 +61,7 @@ class CI_Email {
 	var	$_smtp_connect	= "";
 	var	$_encoding		= "8bit";
 	var $_IP			= FALSE;
-	var	$_smtp_auth		= FALSE;
+	var	$_smtp_auth		= TRUE;
 	var $_replyto_flag	= FALSE;
 	var	$_debug_msg		= array();
 	var	$_recipients	= array();
@@ -512,7 +512,7 @@ class CI_Email {
 	 * @param	string
 	 * @return	void
 	 */
-	function set_newline($newline = "\r\n")
+	function set_newline($newline = "\n")
 	{
 		if ($newline != "\n" AND $newline != "\r\n" AND $newline != "\r")
 		{
