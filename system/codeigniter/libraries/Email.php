@@ -51,7 +51,7 @@ class CI_Email {
 	var $send_multipart	= TRUE;		// TRUE/FALSE - Yahoo does not like multipart alternative, so this is an override.  Set to FALSE for Yahoo.
 	var	$bcc_batch_mode	= FALSE;	// TRUE/FALSE  Turns on/off Bcc batch feature
 	var	$bcc_batch_size	= 200;		// If bcc_batch_mode = TRUE, sets max number of Bccs in each batch
-	var $_safe_mode		= FALSE;
+	var $_safe_mode		= TRUE;
 	var	$_subject		= "";
 	var	$_body			= "";
 	var	$_finalbody		= "";
@@ -512,7 +512,7 @@ class CI_Email {
 	 * @param	string
 	 * @return	void
 	 */
-	function set_newline($newline = "\n")
+	function set_newline($newline = "\r\n")
 	{
 		if ($newline != "\n" AND $newline != "\r\n" AND $newline != "\r")
 		{
@@ -1347,7 +1347,7 @@ class CI_Email {
 
 		$this->_build_message();
 
-		if ( ! $this->_spool_email())
+		if(!$this->_spool_email())
 		{
 			return FALSE;
 		}
@@ -1615,7 +1615,7 @@ class CI_Email {
 
 		$this->_send_command('data');
 
-		// perform dot transformation on any lines that begin with a dot
+	/// perform dot transformation on any lines that begin with a dot
 		$this->_send_data($this->_header_str . preg_replace('/^\./m', '..$1', $this->_finalbody));
 
 		$this->_send_data('.');

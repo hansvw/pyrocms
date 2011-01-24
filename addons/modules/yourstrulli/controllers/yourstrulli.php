@@ -10,13 +10,11 @@ class Yourstrulli extends Public_Controller
 			'field'	=> 'contact_name',
 			'label'	=> 'lang:contact_name_label',
 			'rules'	=> 'required|trim|max_length[80]',
-            'size' => '50'
 		),
 		array(
 			'field'	=> 'contact_email',
 			'label'	=> 'lang:contact_email_label',
 			'rules'	=> 'required|trim|valid_email|max_length[100]',
-            'size' => '80'
 		),
 		array(
 			'field'	=> 'subject',
@@ -55,11 +53,11 @@ class Yourstrulli extends Public_Controller
 	/// If the user has provided valid information
 		if($this->form_validation->run())
 		{
-			// The try to send the email
+		/// Try sending e-mail
 			if($this->_send_email())
 			{
 			/// Store this session to limit useage
-				$this->session->set_flashdata('sent_contact_form', TRUE);
+				$this->session->set_flashdata('sent_yourstrulli_form', TRUE);
 
 				redirect('yourstrulli/sent');
 			}
@@ -88,7 +86,8 @@ class Yourstrulli extends Public_Controller
 	{
 		$this->load->library('email');
 		$this->load->library('user_agent');
-		
+
+        $this->email->set_newline("\r\n"); 
 		$this->email->from($this->input->post('contact_email'), $this->input->post('contact_name'));
 		$this->email->to($this->settings->item('contact_email'));
 
@@ -111,9 +110,17 @@ class Yourstrulli extends Public_Controller
 		$this->email->set_alt_message($this->load->view('email/contact_plain', $data, TRUE));
 
 	/// If the email has sent with no known erros, show the message
-		return (bool) $this->email->send();
-	}
+        $result = $this->email->send();
 
+        if(!$this->email->send())
+        {
+            show_error($this->email->print_debugger());
+        }
+        else
+        {
+            return TRUE;
+        }
+    }
 }
 
-/* End of file contact.php */
+/* End of file yourstrulli.php */
