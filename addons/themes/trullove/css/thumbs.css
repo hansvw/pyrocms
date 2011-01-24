@@ -25,6 +25,6 @@ ul.thumb li img {
 	left: 0; top: 0;
 }
 ul.thumb li img.hover {
-	background:url(thumb_bg.png) no-repeat center center;  /* Image used as background on hover effect
+/*	background:url(thumb_bg.png) no-repeat center center; */ /* Image used as background on hover effect
 	border: none; /* Get rid of border on hover */
 }
