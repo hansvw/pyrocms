@@ -12,7 +12,7 @@
 {
 /*	width: 81px; */
 	width: 128px;
-	height: 70px;
+	height: 40px;
 	text-align: center;
 	vertical-align: middle;
 	background: url(../img/cells.png);
@@ -136,20 +136,14 @@ td#today:hover
 
 #calmain
 {
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 #calmain .dayevents
 {
-
 	border-bottom: 2px solid #cccccc;
-
 	margin-bottom: 20px;
-
 	padding: 0 0 20px 0;
-
-
-
 }
 
 #navcontainer ul li 
