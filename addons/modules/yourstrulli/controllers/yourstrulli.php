@@ -63,7 +63,7 @@ class Yourstrulli extends Public_Controller
 			}
 		}
 
-		// Set the values for the form inputs
+	/// Set the values for the form inputs
 		foreach($this->rules as $rule)
 		{
 			$form_values->{$rule['field']} = set_value($rule['field']);
@@ -89,7 +89,12 @@ class Yourstrulli extends Public_Controller
 
         $this->email->set_newline("\r\n"); 
 		$this->email->from($this->input->post('contact_email'), $this->input->post('contact_name'));
-		$this->email->to($this->settings->item('contact_email'));
+
+        $recipients = array(
+            $this->settings->item('contact_email'),
+            $this->input->post('contact_email'));
+
+        $this->email->to($recipients);
 
 	/// If "other subject" exists then use it, if not then use the selected subject
 		$subject = ($this->input->post('other_subject')) ? $this->input->post('other_subject') : $this->subjects[$this->input->post('subject')];

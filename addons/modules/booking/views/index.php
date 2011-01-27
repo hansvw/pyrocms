@@ -135,7 +135,7 @@
             }
             else
             {
-                echo form_input($formfields['tel1']);
+                echo form_input($formfields['tel2']);
             }?>
             </div>
         </div>
@@ -157,6 +157,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div>
+    <div><label for="message">Special requests, message to owner:</label></div>
+    <div>
+        <?php echo form_textarea($formfields['message']);?>
     </div>
 </div>
 <p class="form_buttons">

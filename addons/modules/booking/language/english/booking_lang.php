@@ -8,12 +8,14 @@ $lang['booking_country_label']              = 'Country';
 $lang['booking_language_label']             = 'Preferred Language';
 $lang['booking_tel1_label']                 = 'Telephone Number (including international dialing code)';
 $lang['booking_tel2_label']                 = 'Alternate Telephone Number';
-$lang['booking_message_label']              = 'Message';
+$lang['booking_message_label']              = 'Special Requests, Message to Owner';
 $lang['booking_send_label']					= 'Submit Reservation';
+$lang['booking_confirmation_label']         = 'Confirmation number';
 $lang['booking_mail_ip_label']				= 'IP: %s';
 $lang['booking_mail_os_label']				= 'OS: %s';
 $lang['booking_mail_agent_label']			= 'Agent: %s';
-
+$lang['booking_mail_above_message_label']	= '-- Below is the message ---';
+$lang['booking_mail_below_message_label']	= '-- Details -----------';
 
 // titles
 $lang['booking_sent_title']					= 'Reservation Submitted';
@@ -21,7 +23,7 @@ $lang['booking_title']						= 'Reservation';
 
 // texts
 $lang['booking_mail_text']					= 'This message was sent via the reservation form on %s with the following details:';
-$lang['booking_sent_text']					= 'Your reservation has been submitted. We will get back to you as soon as we can.';
+$lang['booking_sent_text']					= 'Thank you for your reservation! Your details has been forwarded to the owners.';
 $lang['booking_capchar_text']				= 'Enter the word you see below:';
 
 // countries

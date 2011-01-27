@@ -12,6 +12,7 @@ class Module_Booking extends Module {
 			  `lastname` varchar(255) NOT NULL,
 			  `email` varchar(255) NOT NULL,
               `country` varchar(255) NOT NULL,
+              `language` varchar(255) NOT NULL,
 			  `tel1` varchar(16),
 			  `tel2` varchar(16),
 			  PRIMARY KEY (`id`),
@@ -63,6 +64,7 @@ class Module_Booking extends Module {
               `enddate` DATE NOT NULL,
               `starttime` TIME DEFAULT NULL,
               `enddtime` TIME DEFAULT NULL,
+              `message` varchar(2048) DEFAULT NULL,
 			  `status` varchar(255) NOT NULL,
 			  PRIMARY KEY (`id`),
 			  UNIQUE KEY `code` (`code`)

@@ -103,13 +103,17 @@ class Availability_m extends MY_Model
 		return $reservations;
 	}
 
-    function createReservation()
+    function createReservation($arrivaldates,$lengthsofstay)
     {
+        $arrivaldate = $arrivaldates[$_POST['arrivaldate']];
+        $lengthofstay = $lengthsofstay[$_POST['lengthofstay']];
+
         $persondata = array(
    			  'firstname' => $_POST['firstname'],
               'lastname' => $_POST['lastname'],
               'email' => $_POST['email'],
               'country' => $_POST['country'],
+              'language' => $_POST['language'],
               'tel1' => $_POST['tel1'],
               'tel2' => $_POST['tel2']
         );
@@ -123,25 +127,43 @@ class Availability_m extends MY_Model
         }
         else
         {
-            $this->db->insert('rsperson', $persondata);
-            $existingperson = $persondata;
-            $existingperson['id'] = $this->db->insert_id();
+            if($this->db->insert('rsperson', $persondata))
+            {
+                $personid = $this->db->insert_id();
+                $this->db->where('id', $personid);
+                $query = $this->db->get('rsperson');
+                $existingperson = $query->row();
+            }
+            else
+            {
+                return FALSE;
+            }
         }
 
         $query->free_result();
 
+        $reservationcode = uniqid();
+
+        $departuredate = strtotime($arrivaldate . ' + '. 7 * $lengthofstay . ' days');
+
         $reservationdata = array(
-            'code' => $_POST['reservationcode'],
-            'person_id' => $existingperson['id'],
-            'dtreservation' => date('Y-M-d h:i:s'),
-            'startdate' => $_POST['startdate'],
-            'enddate' => $_POST['enddate'],
+            'code' => $reservationcode,
+            'person_id' => $existingperson->id,
+            'dtreservation' => date('Y-m-d H:i:s'),
+            'startdate' => date('Y-m-d',strtotime($arrivaldate)),
+            'starttime' => date('H:i:s', mktime(16,0,0)),
+            'enddtime' => date('H:i:s', mktime(16,0,0)),
+            'enddate' => date('Y-m-d', $departuredate),
+            'message' => $_POST['message'],
             'status' => 'pending'
             );
 
-        $this->db->insert('rsreservation', $reservationdata);
+        if(!$this->db->insert('rsreservation', $reservationdata))
+        {
+            return FALSE;
+        }
 
-        return $reservation;
+        return $reservationdata;
     }
 
     function editReservation()
