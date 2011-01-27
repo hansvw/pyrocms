@@ -36,7 +36,7 @@
 					///	check if any event stored for the date
 						if(array_key_exists($day,$events))
 						{
-							//adding the date_has_event class to the <td> and close it
+						/// adding the date_has_event class to the <td> and close it
 							echo ' class="date_has_event"> ';
 							echo anchor("calendar/dayevents/".$current_year."-".$current_month."-".$day,$day);
 							
