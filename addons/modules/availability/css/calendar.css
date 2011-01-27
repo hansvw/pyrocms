@@ -159,15 +159,9 @@ td#today:hover
 
 #calmain .dayevents
 {
-
 	border-bottom: 2px solid #cccccc;
-
 	margin-bottom: 20px;
-
 	padding: 0 0 20px 0;
-
-
-
 }
 
 #navcontainer ul li 
@@ -186,7 +180,8 @@ td#today:hover
     font-size: 1.5em;
 }
 
-.date_has_event a{
+.date_has_event a
+{
     color:#ffffff;
 }
 
