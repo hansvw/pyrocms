@@ -10,9 +10,8 @@
 
 #calmain td,#calmain th 
 {
-/*	width: 81px; */
 	width: 128px;
-	height: 70px;
+	height: 40px;
 	text-align: center;
 	vertical-align: middle;
 	background: url(../img/cells.png);
@@ -74,14 +73,12 @@
 
 #calmain td#today 
 {
-/*	background-position: 81px 0px; */
 	background-position: 128px 0px;
 	color: green;
 }
 
 td#today:hover 
 {
-/*	background-position: 81px -81px; */
 	background-position: 128px -81px; 
 }
 
@@ -157,7 +154,7 @@ td#today:hover
 
 #calmain
 {
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 #calmain .dayevents
