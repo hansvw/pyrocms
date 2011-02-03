@@ -3,7 +3,6 @@
 class Booking extends Public_Controller
 {
     private $formfields = array();
-    private $formvalues;
     
 	function __construct()
 	{
@@ -105,8 +104,6 @@ class Booking extends Public_Controller
         $this->form_validation->set_rules('tel2','Alternate Telephone Number','trim|min_length[7]|max_length[16]');
         $this->form_validation->set_rules('message','Special Requests, message to owner', 'trim|max_length[2048]');
 
-        $this->formvalues->arrivaldates = $arrivaldates;
-        $this->formvalues->lengthsofstay = $lengthsofstay;
 
 	/// Validate form
 		if($this->form_validation->run())
@@ -126,9 +123,20 @@ class Booking extends Public_Controller
                 }
             }
 		}
-		
+
+        $form_values->firstname = set_value($this->formfields['firstname']['name']);
+        $form_values->lastname = set_value($this->formfields['lastname']['name']);
+        $form_values->email = set_value($this->formfields['email']['name']);
+        $form_values->country = set_value($this->formfields['country']['name']);
+        $form_values->language = set_value($this->formfields['language']['name']);
+        $form_values->tel1 = set_value($this->formfields['tel1']['name']);
+        $form_values->tel2 = set_value($this->formfields['tel2']['name']);
+        $form_values->message = set_value($this->formfields['message']['name']);
+        $form_values->arrivaldates = $arrivaldates;
+        $form_values->lengthsofstay = $lengthsofstay;
+
 		$this->template
-			->set('form_values', $this->formvalues)
+			->set('form_values', $form_values)
             ->set('formfields', $this->formfields)
 			->build('index');
 	}

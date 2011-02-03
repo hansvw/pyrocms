@@ -15,7 +15,7 @@
             }
             else
             {
-                echo form_input($formfields['firstname']);
+                echo form_input($formfields['firstname'], $form_values->firstname);
             }?>
             </div>
         </div>
@@ -35,7 +35,7 @@
             }
             else
             {
-                echo form_input($formfields['lastname']);
+                echo form_input($formfields['lastname'], $form_values->lastname);
             }?>
             </div>
         </div>
@@ -55,7 +55,7 @@
             }
             else
             {
-                echo form_input($formfields['email']);
+                echo form_input($formfields['email'], $form_values->email);
             }?>
             </div>
         </div>
@@ -75,7 +75,7 @@
             }
             else
             {
-                echo form_input($formfields['country']);
+                echo form_input($formfields['country'], $form_values->country);
             }?>
             </div>
         </div>
@@ -95,7 +95,7 @@
             }
             else
             {
-                echo form_input($formfields['language']);
+                echo form_input($formfields['language'], $form_values->language);
             }?>
             </div>
         </div>
@@ -115,7 +115,7 @@
             }
             else
             {
-                echo form_input($formfields['tel1']);
+                echo form_input($formfields['tel1'], $form_values->tel1);
             }?>
             </div>
         </div>
@@ -135,7 +135,7 @@
             }
             else
             {
-                echo form_input($formfields['tel2']);
+                echo form_input($formfields['tel2'], $form_values->tel2);
             }?>
             </div>
         </div>
@@ -162,7 +162,7 @@
 <div>
     <div><label for="message">Special requests, message to owner:</label></div>
     <div>
-        <?php echo form_textarea($formfields['message']);?>
+        <?php echo form_textarea($formfields['message'], $form_values->message);?>
     </div>
 </div>
 <p class="form_buttons">
