@@ -63,7 +63,7 @@ class Availability_m extends MY_Model
                     rscalendar.reservation_code, rsreservation.code,
                     rsreservation.status AS status
             FROM rscalendar, rsreservation
-            WHERE DATE_FORMAT(rscalendar.calendardate,'%d')
+            WHERE rscalendar.calendardate
                 BETWEEN '$current_year/$current_month/01' AND
                 '$current_year/$current_month/$total_days_of_current_month'
                 AND rscalendar.reservation_code = rsreservation.code");

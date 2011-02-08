@@ -34,13 +34,13 @@
 
 #calmain td.date_has_pending_reservation
 {
-	background-position: 384px 0px;
+	background-position: 256px 0px;
 	color: white;
 }
 
 #calmain td.date_has_pending_reservation:hover
 {
-    background-position: 384px -81px;
+    background-position: 256px -81px;
 }
 
 #calmain td.date_has_confirmed_reservation
@@ -49,7 +49,7 @@
 	color: white;
 }
 
-#calmain td.date_has_conformed_reservation:hover
+#calmain td.date_has_confirmed_reservation:hover
 {
     background-position: 384px -81px;
     color: white;

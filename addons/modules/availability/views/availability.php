@@ -32,7 +32,7 @@
 						{
 							echo ' id="today"';
 						}
-						
+
 					///	check if any event stored for the date
 						if(array_key_exists($day,$reservations))
 						{
@@ -42,14 +42,14 @@
                                 {
                                     foreach($reservation as $single_reservation)
                                     {
-                                        if($single_reservation['status'] == 'pending')
+                                        if($single_reservation->status == 'pending')
                                         {
-                                            echo ' class="date_has_pending_reservation">';
+                                            echo ' class="date_has_pending_reservation">'.$day.'</br>pending';
                                             break;
                                         }
-                                        else if($single_reservation['status'] == 'confirmed')
+                                        else if($single_reservation->status == 'confirmed')
                                         {
-                                            echo ' class="date_has_confirmed_reservation">';
+                                            echo ' class="date_has_confirmed_reservation">'.$day.'</br>confirmed';
                                             break;
                                         }
                                     }
@@ -57,7 +57,7 @@
                             }
 
 						/// adding the date_has_event class to the <td> and close it
-							echo ' class="date_has_event"> ';
+/*							echo ' class="date_has_event"> ';
 							echo anchor("availability/reservations/".$current_year."-".$current_month."-".$day,$day);
 							
 						/// adding the eventTitle and eventContent wrapped inside <span> & <li> to <ul>
@@ -77,7 +77,7 @@
   								
 							} // end of foreach $reservations
 							
-							echo '</ul></div>';
+							echo '</ul></div>'; */
 						} // end of if(array_key_exists...)
 						else 
 						{

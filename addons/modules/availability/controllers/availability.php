@@ -6,7 +6,7 @@ class Availability extends Public_Controller
     {
     	parent::Public_Controller();
     	$this->load->model('availability_m');
-    	$this->template->append_metadata( css('calendar.css', 'calendar') );
+    	$this->template->append_metadata( css('availability.css', 'availability') );
  	}
   
  	function index()
@@ -22,7 +22,7 @@ class Availability extends Public_Controller
 		$data = $this->_date($time);
 		
         $this->template
-                ->append_metadata( js('calendar.js', 'calendar') )
+                ->append_metadata( js('availability.js', 'availability') )
                 ->build('availability', $this->data);
 	}
   
@@ -53,7 +53,7 @@ class Availability extends Public_Controller
 		}
 		
         $this->template
-        	->append_metadata( js('calendar.js', 'calendar') )
+        	->append_metadata( js('availability.js', 'availability') )
             ->build('admin/calendar_create', $this->data);
 
 	}
@@ -83,7 +83,7 @@ class Availability extends Public_Controller
 	
 		$data['header'] = 'Calendar';
                 $this->template
-                    ->append_metadata( js('calendar.js', 'calendar') )
+                    ->append_metadata( js('availability.js', 'availability') )
                     ->build('admin/calendar_edit', $this->data);
 	}
 
@@ -110,7 +110,8 @@ class Availability extends Public_Controller
 		
 	}
 	
-	function delete($id=0){
+	function delete($id=0)
+    {
 		$this->availability_m->deleteEvent($id);
 		$this->session->set_flashdata('message', 'Event deleted successfully.');
 		redirect('admin/calendar/index');
