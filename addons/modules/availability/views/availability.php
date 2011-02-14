@@ -49,7 +49,7 @@
                                         }
                                         else if($single_reservation->status == 'confirmed')
                                         {
-                                            echo ' class="date_has_confirmed_reservation">'.$day.'</br>confirmed';
+                                            echo ' class="date_has_confirmed_reservation">'.$day.'</br>booked';
                                             break;
                                         }
                                     }
