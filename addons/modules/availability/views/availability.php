@@ -44,12 +44,12 @@
                                     {
                                         if($single_reservation->status == 'pending')
                                         {
-                                            echo ' class="date_has_pending_reservation">'.$day.'</br>pending';
+                                            echo ' class="date_has_pending_reservation">'.$day.'<br />pending';
                                             break;
                                         }
                                         else if($single_reservation->status == 'confirmed')
                                         {
-                                            echo ' class="date_has_confirmed_reservation">'.$day.'</br>booked';
+                                            echo ' class="date_has_confirmed_reservation">'.$day.'<br />booked';
                                             break;
                                         }
                                     }
