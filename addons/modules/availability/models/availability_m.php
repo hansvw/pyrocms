@@ -31,7 +31,11 @@ class Availability_m extends MY_Model
         }
 
     /// Push date for first week of year
-        array_push($dates, date("l F jS, o", mktime(0, 0, 0, $month, $day + $dayofweek, $year)));
+        $firstdate = date("l F jS, o", mktime(0, 0, 0, $month, $day + $dayofweek, $year));
+        if($this->isAvailable($firstdate))
+        {
+            array_push($dates, date("l F jS, o", mktime(0, 0, 0, $month, $day + $dayofweek, $year)));
+        }
 
         while($newyear == $year)
         {
@@ -39,7 +43,10 @@ class Availability_m extends MY_Model
             $i++;
             if($year == date("Y", $test))
             {
-                array_push($dates, date("l F jS, o", $test));
+                if($this->isAvailable($test))
+                {
+                    array_push($dates, date("l F jS, o", $test));
+                }
             }
 
             $newyear = date("Y", $test);
@@ -142,6 +149,22 @@ class Availability_m extends MY_Model
 
     function deleteReservation()
     {
+    }
+
+    function isAvailable($date)
+    {
+        $day = date('Y-m-d', $date);
+		$query = $this->db->query("
+            SELECT startdate, status
+            FROM rsreservation
+            WHERE startdate = '$day' AND (status = 'pending' OR status = 'confirmed')");
+
+        if($query->num_rows() > 0)
+        {
+            return FALSE;
+        }
+
+        return TRUE;
     }
 
 // end of Model/calendar_m.php

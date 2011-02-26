@@ -77,7 +77,7 @@ class Module_Booking extends Module {
               `reservation_code` varchar(255) DEFAULT NULL,
 			  `reservation_status` varchar(255) NOT NULL,
 			  PRIMARY KEY (`id`),
-			  UNIQUE KEY `calendarresource` (`calendardate`),
+			  INDEX `calendarresource` (`calendardate`),
               KEY `reservation_code` (`reservation_code`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 		"

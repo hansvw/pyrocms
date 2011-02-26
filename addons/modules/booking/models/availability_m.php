@@ -22,7 +22,6 @@ class Availability_m extends MY_Model
         $day = 0;
         $month = 1;
         $i = 0;
-        $currentdate;
 
     /// Progress to first week of year
         while($week != 1)
@@ -32,10 +31,13 @@ class Availability_m extends MY_Model
         }
 
     /// Push date for first week of year
-        $currentdate = mktime(0, 0, 0, $month, $day + $dayofweek, $year);
-        if($currentdate > strtotime(date("Y-m-d")))
+        $firstdate = mktime(0, 0, 0, $month, $day + $dayofweek, $year);
+        if($firstdate > strtotime(date("Y-m-d")))
         {
-            array_push($dates, date("l F jS, o", $currentdate));
+            if($this->isAvailable($firstdate))
+            {
+                array_push($dates, date("l F jS, o", $firstdate));
+            }
         }
 
         while($newyear <= $year + 1)
@@ -46,7 +48,10 @@ class Availability_m extends MY_Model
             {
                 if($test > strtotime(date("Y-m-d")))
                 {
-                    array_push($dates, date("l F jS, o", $test));
+                    if($this->isAvailable($test))
+                    {
+                        array_push($dates, date("l F jS, o", $test));
+                    }
                 }
             }
 
@@ -152,8 +157,8 @@ class Availability_m extends MY_Model
             'dtreservation' => date('Y-m-d H:i:s'),
             'startdate' => date('Y-m-d',strtotime($arrivaldate)),
             'starttime' => date('H:i:s', mktime(16,0,0)),
-            'enddtime' => date('H:i:s', mktime(16,0,0)),
             'enddate' => date('Y-m-d', $departuredate),
+            'enddtime' => date('H:i:s', mktime(16,0,0)),
             'message' => $_POST['message'],
             'status' => 'pending'
             );
@@ -161,6 +166,20 @@ class Availability_m extends MY_Model
         if(!$this->db->insert('rsreservation', $reservationdata))
         {
             return FALSE;
+        }
+
+        $checkdate = $reservationdata['startdate'];
+
+        while(strtotime($checkdate) <= strtotime($reservationdata['enddate']))
+        {
+            $calendarday = array(
+                'calendardate' => $checkdate,
+                'reservation_code' => $reservationdata['code'],
+                'reservation_status' => $reservationdata['status']
+            );
+
+            $this->db->insert('rscalendar', $calendarday);
+            $checkdate = date("Y-m-d", strtotime("+1 day", strtotime($checkdate)));
         }
 
         return $reservationdata;
@@ -174,5 +193,20 @@ class Availability_m extends MY_Model
     {
     }
 
+    function isAvailable($date)
+    {
+        $day = date('Y-m-d', $date);
+		$query = $this->db->query("
+            SELECT startdate, status
+            FROM rsreservation
+            WHERE startdate = '$day' AND (status = 'pending' OR status = 'confirmed')");
+
+        if($query->num_rows() > 0)
+        {
+            return FALSE;
+        }
+
+        return TRUE;
+    }
 // end of Model/calendar_m.php
 }
