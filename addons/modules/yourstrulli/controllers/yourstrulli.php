@@ -21,6 +21,11 @@ class Yourstrulli extends Public_Controller
 			'label'	=> 'lang:contact_subject_label',
 			'rules'	=> 'required|trim'
 		),
+        array(
+            'field' => 'other_subject',
+            'label' => 'lang:contact_other_label',
+            'rules' => 'trim'
+        ),
 		array(
 			'field'	=> 'message',
 			'label'	=> 'lang:contact_message_label',

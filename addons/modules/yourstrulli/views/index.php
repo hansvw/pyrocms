@@ -40,7 +40,12 @@
                     </div>
                 </div>
                 <div class="col2">
-                <input id="other_subject" name="other_subject" type="text" />
+                    <div>
+                        <label for="contact_other_subject"><?php echo lang('contact_other_label');?></label>
+                    </div>
+                    <div>
+                        <input id="other_subject" name="other_subject" type="text" />
+                    </div>
                 </div>
             </div>
         </div>
