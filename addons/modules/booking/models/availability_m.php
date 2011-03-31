@@ -197,9 +197,9 @@ class Availability_m extends MY_Model
     {
         $day = date('Y-m-d', $date);
 		$query = $this->db->query("
-            SELECT startdate, status
-            FROM rsreservation
-            WHERE startdate = '$day' AND (status = 'pending' OR status = 'confirmed')");
+            SELECT reservation_status
+            FROM rscalendar
+            WHERE calendardate = '$day' AND (reservation_status = 'pending' OR reservation_status = 'confirmed')");
 
         if($query->num_rows() > 0)
         {
