@@ -1,4 +1,4 @@
-<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Yourstrulli extends Public_Controller
 {
@@ -10,12 +10,20 @@ class Yourstrulli extends Public_Controller
 			'field'	=> 'contact_name',
 			'label'	=> 'lang:contact_name_label',
 			'rules'	=> 'required|trim|max_length[80]',
+            'size'  => '40'
 		),
 		array(
 			'field'	=> 'contact_email',
 			'label'	=> 'lang:contact_email_label',
 			'rules'	=> 'required|trim|valid_email|max_length[100]',
+            'size'  => '50'
 		),
+        array(
+            'field' => 'contact_phone',
+            'label' => 'lang:contact_phone_label',
+            'rules' => 'trim|max_length[32]',
+            'size'  => '32',
+        ),
 		array(
 			'field'	=> 'subject',
 			'label'	=> 'lang:contact_subject_label',
@@ -29,7 +37,8 @@ class Yourstrulli extends Public_Controller
 		array(
 			'field'	=> 'message',
 			'label'	=> 'lang:contact_message_label',
-			'rules'	=> 'required'
+			'rules'	=> 'required',
+            'cols'  => '160'
 		)
 	);
 
@@ -64,6 +73,8 @@ class Yourstrulli extends Public_Controller
 			/// Store this session to limit useage
 				$this->session->set_flashdata('sent_yourstrulli_form', TRUE);
 
+                $this->_send_visitor_email();
+
 				redirect('yourstrulli/sent');
 			}
 		}
@@ -95,9 +106,7 @@ class Yourstrulli extends Public_Controller
         $this->email->set_newline("\r\n"); 
 		$this->email->from($this->input->post('contact_email'), $this->input->post('contact_name'));
 
-        $recipients = array(
-            $this->settings->item('contact_email'),
-            $this->input->post('contact_email'));
+        $recipients = array($this->settings->item('contact_email'));
 
         $this->email->to($recipients);
 
@@ -105,7 +114,7 @@ class Yourstrulli extends Public_Controller
 		$subject = ($this->input->post('other_subject')) ? $this->input->post('other_subject') : $this->subjects[$this->input->post('subject')];
 		$this->email->subject($this->settings->item('site_name') .' - '.$subject);
 
-	/// Loop through cleaning data and inputting to $data
+	/// Copy form field values to $data
 		foreach(array_keys($_POST) as $field_name)
 		{
 			$data[$field_name] = $this->input->post($field_name, TRUE);
@@ -119,8 +128,41 @@ class Yourstrulli extends Public_Controller
 		$this->email->message($this->load->view('email/contact_html', $data, TRUE));
 		$this->email->set_alt_message($this->load->view('email/contact_plain', $data, TRUE));
 
-	/// If the email has sent with no known erros, show the message
-        $result = $this->email->send();
+        if(!$this->email->send())
+        {
+            show_error($this->email->print_debugger());
+        }
+        else
+        {
+            $this->email->clear();
+            return TRUE;
+        }
+    }
+
+    function _send_visitor_email()
+	{
+		$this->load->library('email');
+		$this->load->library('user_agent');
+
+        $this->email->set_newline("\r\n");
+		$this->email->from($this->settings->item('contact_email'), $this->settings->item('site_name'));
+
+        $recipients = array($this->input->post('contact_email'));
+
+        $this->email->to($recipients);
+
+	/// If "other subject" exists then use it, if not then use the selected subject
+		$subject = ($this->input->post('other_subject')) ? $this->input->post('other_subject') : $this->subjects[$this->input->post('subject')];
+		$this->email->subject($this->settings->item('site_name') .' - '.$subject);
+
+	/// Copy form field values to $data
+		foreach(array_keys($_POST) as $field_name)
+		{
+			$data[$field_name] = $this->input->post($field_name, TRUE);
+		}
+
+		$this->email->message($this->load->view('email/visitor_html', $data, TRUE));
+		$this->email->set_alt_message($this->load->view('email/visitor_plain', $data, TRUE));
 
         if(!$this->email->send())
         {
@@ -128,6 +170,7 @@ class Yourstrulli extends Public_Controller
         }
         else
         {
+            $this->email->clear();
             return TRUE;
         }
     }

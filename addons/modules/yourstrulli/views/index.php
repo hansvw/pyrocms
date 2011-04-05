@@ -25,6 +25,14 @@
                     <?php echo form_input('contact_email', $form_values->contact_email);?>
                     </div>
                 </div>
+                <div class="col3">
+                    <div>
+                        <label for="contact_phone"><?php echo lang('contact_phone_label');?></label>
+                    </div>
+                    <div>
+                    <?php echo form_input('contact_phone', $form_values->contact_phone);?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
