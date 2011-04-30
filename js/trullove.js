@@ -6,13 +6,6 @@
     var map = null;
     var initiallocation = new google.maps.LatLng(40.624580,17.40206);
 
-    var trulloveImage = 'images/trullove-marker.png';
-    var trulloveLatLng = new google.maps.LatLng(40.624580,17.40206);
-
-    var airportImage = 'images/airport-icon.png';
-    var airportBariLatLng = new google.maps.LatLng(41.13762, 16.76522);
-    var airportBrindisiLatLng = new google.maps.LatLng(40.65824, 17.93921);
-
 
 /**
   * Viewer initialization. Internet explorer versions 5.5 -> 7.0 have issues
@@ -35,6 +28,41 @@
         this.prototype[name] = func;
         return this;
     };
+
+    function InfoBubbleMarker(markerdata)
+    {
+        this.markerdata = markerdata;
+    }
+
+    InfoBubbleMarker.method('add', function(map)
+    {
+        var marker = new google.maps.Marker(
+        {
+            position: new google.maps.LatLng(this.markerdata.lat, this.markerdata.lng),
+            //animation: google.maps.Animation.DROP,
+            map: map,
+            icon: this.markerdata.imageFile
+        });
+
+        var infoBubble = new InfoBubble({
+          maxWidth: 300
+        });
+
+        for(var i = 0; i < this.markerdata['tabs'].length; i++)
+        {
+            var div = document.createElement('div');
+            div.innerHTML = this.markerdata['tabs'][i].divText;
+            infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
+        }
+        
+        google.maps.event.addListener(marker, 'click', function()
+        {
+            if (!infoBubble.isOpen())
+            {
+                infoBubble.open(map, marker);
+            }
+        });
+    });
 
     function initialize()
     {
@@ -79,9 +107,10 @@
 	    	center: initiallocation,
             mapTypeControlOptions: {
                 mapTypeIds: [
+                    /// google.maps.MapTypeId.SATELLITE,
                     google.maps.MapTypeId.ROADMAP,
+                    google.maps.MapTypeId.HYBRID,
                     google.maps.MapTypeId.TERRAIN,
-                    google.maps.MapTypeId.SATELLITE,
                     'Trullove']
             }
         };
@@ -96,27 +125,13 @@
         map.mapTypes.set('Trullove', trulloveMapType);
         map.setMapTypeId('Trullove');
 
-        var trulloveMarker = new google.maps.Marker({
-            position: trulloveLatLng,
-            animation: google.maps.Animation.DROP,
-            map: map,
-            icon: trulloveImage
-        });
-
-        var airportBrindisiMarker = new google.maps.Marker({
-            position: airportBrindisiLatLng,
-            animation: google.maps.Animation.DROP,
-            map: map,
-            icon: airportImage
-        });
-
-        var airportBariMarker = new google.maps.Marker({
-            position: airportBariLatLng,
-            animation: google.maps.Animation.DROP,
-            map: map,
-            icon: airportImage
-        });
+        for(var i = 0; i < markerjson['markers'].length; i++)
+        {
+            var marker = new InfoBubbleMarker(markerjson['markers'][i]);
+            marker.add(map);
+        }
 
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
+        
     }

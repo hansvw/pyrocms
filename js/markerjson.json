@@ -1,0 +1,64 @@
+var markerjson =
+{
+    "backgroundColor" : "1",
+    "markers" :
+    [
+        {
+            "id" : "trulloveMarker",
+            "imageFile" : "images/trullove-marker.png",
+            "lat" : 40.624580,
+            "lng" : 17.40206,
+            "tabs" :
+            [
+                {
+                    "tabText" : "<span id=\"markerTrulloveStyle\">Trullove</span>",
+                    "divText" : "<h4>For Rent :) Magnificent Trulli Villa</h4><p>Trullove is a magnificently restored trullo complex surrounded by 20 acres of quiet, sunbaked olive groves and fruit orchards. Ideal for families and larger groups of friends, the property sleeps up to 16 people giving all members of the family or group their own space. Lovely shaded drystone walled travertine terraces and patios with padded stone seats, sun loungers and umbrellas transform the garden and spacious infinity-edge pool into splendid open-air lounges, creating an enchanting place to relax.</p>" ,
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Directions",
+                    "divText" : "description",
+                    "image" : ""
+                }
+            ]
+        },
+        {
+            "id" : "airportBrindisiMarker",
+            "imageFile" : "images/airport-icon.png",
+            "lat" : 40.65824,
+            "lng" : 17.93921,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Brindisi Airport",
+                    "divText" : "<a href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=29\" target=\"_blank\">Brindisi Airport</a><br />",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Driving Directions",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Brindisi+Airport,+Brindisi,+Italy&daddr=Strada+Trazzonara&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFUrjawIdPIcJAQ&mra=dme&mrsp=1&sz=16&sll=40.6248,17.403996&sspn=0.008159,0.011137&ie=UTF8&ll=40.61291,17.637177&spn=0.533759,0.881653&z=10\">Driving Directions</a>",
+                    "image" : ""
+                }
+            ]
+        },
+        {
+            "id" : "airportBariMarker",
+            "imageFile" : "images/airport-icon.png",
+            "lat" : 41.13762,
+            "lng" : 16.76522,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Bari Airport",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Driving Directions",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions</a>",
+                    "image" : ""
+                }
+            ]
+        },
+    ]
+}
