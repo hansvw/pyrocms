@@ -169,3 +169,7 @@
     <input type="submit" class="art-button" value="<?php echo lang('booking_send_label') ?>" name="btnSubmit" />
 </p>
 <?php echo form_close(); ?>
+<p>
+    Arrival dates for Trullove are normally on Sundays.
+    <?php echo ' Please <a class="art-button" href="'.BASE_URL.'yourstrulli">contact us</a> to make special arrangements.';?>
+</p>
