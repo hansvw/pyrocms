@@ -67,6 +67,6 @@
         </div>
     </div>
     <p class="form_buttons">
-		<input type="submit" value="<?php echo lang('contact_send_label') ?>" name="btnSubmit" />
+		<input class="art-button" type="submit" value="<?php echo lang('contact_send_label') ?>" name="btnSubmit" />
 	</p>
 <?php echo form_close(); ?>
