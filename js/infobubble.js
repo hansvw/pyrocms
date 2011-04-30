@@ -126,7 +126,7 @@ InfoBubble.prototype.SHADOW_STYLE_ = 1;
  * @const
  * @private
  */
-InfoBubble.prototype.MIN_WIDTH_ = 50;
+InfoBubble.prototype.MIN_WIDTH_ = 128;
 
 
 /**
@@ -158,7 +158,7 @@ InfoBubble.prototype.BORDER_WIDTH_ = 1;
  * @const
  * @private
  */
-InfoBubble.prototype.BORDER_COLOR_ = '#ccc';
+InfoBubble.prototype.BORDER_COLOR_ = '#b8d6ff';
 
 
 /**
@@ -166,7 +166,7 @@ InfoBubble.prototype.BORDER_COLOR_ = '#ccc';
  * @const
  * @private
  */
-InfoBubble.prototype.BORDER_RADIUS_ = 10;
+InfoBubble.prototype.BORDER_RADIUS_ = 5;
 
 
 /**
@@ -1245,6 +1245,7 @@ InfoBubble.prototype.setTabStyle_ = function(tab) {
 
   var marginRight = this.px(-(Math.max(padding, borderRadius)));
   var borderRadiusPx = this.px(borderRadius);
+  var marginLeft = this.px(10);
 
   var index = this.baseZIndex_;
   if (tab.index) {
@@ -1260,6 +1261,7 @@ InfoBubble.prototype.setTabStyle_ = function(tab) {
     'border': this.px(borderWidth) + ' solid ' + borderColor,
     'padding': this.px(padding / 2) + ' ' + this.px(padding),
     'marginRight': marginRight,
+    'marginLeft' : marginLeft,
     'whiteSpace': 'nowrap',
     'borderRadiusTopLeft': borderRadiusPx,
     'MozBorderRadiusTopleft': borderRadiusPx,

@@ -12,12 +12,12 @@ var markerjson =
             [
                 {
                     "tabText" : "<span id=\"markerTrulloveStyle\">Trullove</span>",
-                    "divText" : "<h4>For Rent :) Magnificent Trulli Villa</h4><p>Trullove is a magnificently restored trullo complex surrounded by 20 acres of quiet, sunbaked olive groves and fruit orchards. Ideal for families and larger groups of friends, the property sleeps up to 16 people giving all members of the family or group their own space. Lovely shaded drystone walled travertine terraces and patios with padded stone seats, sun loungers and umbrellas transform the garden and spacious infinity-edge pool into splendid open-air lounges, creating an enchanting place to relax.</p>" ,
+                    "divText" : "<h4>For Rent: Magnificent Trulli Villa</h4><p>Trullove is a magnificently restored trullo complex surrounded by 20 acres of quiet, sunbaked olive groves and fruit orchards. Ideal for families and larger groups of friends, the property sleeps up to 16 people giving all members of the family or group their own space. Lovely shaded drystone walled travertine terraces and patios with padded stone seats, sun loungers and umbrellas transform the garden and spacious infinity-edge pool into splendid open-air lounges, creating an enchanting place to relax.</p>" ,
                     "image" : ""
                 },
                 {
                     "tabText" : "Directions",
-                    "divText" : "description",
+                    "divText" : "<ul><li>Directions to Brindisi Airport</li><li>Directions to Bari Airport</li></ul>",
                     "image" : ""
                 }
             ]
@@ -60,5 +60,77 @@ var markerjson =
                 }
             ]
         },
+        {
+            "id" : "locorotondoMarker",
+            "imageFile" : "images/pushpin.png",
+            "lat" : 40.7554,
+            "lng" : 17.3263,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Locorotondo",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Markets",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Driving Directions",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions</a>",
+                    "image" : ""
+                }
+            ]
+        },
+        {
+            "id" : "lecceMarker",
+            "imageFile" : "images/pushpin.png",
+            "lat" : 40.3528,
+            "lng" : 18.174,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Lecce",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Markets",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Driving Directions",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions</a>",
+                    "image" : ""
+                }
+            ]
+        },
+        {
+            "id" : "martinaFrancaMarker",
+            "imageFile" : "images/pushpin.png",
+            "lat" : 40.7041,
+            "lng" : 17.3349,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Martina Franca",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Markets",
+                    "divText" : "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport</a>",
+                    "image" : ""
+                },
+                {
+                    "tabText" : "Driving Directions",
+                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions</a>",
+                    "image" : ""
+                }
+            ]
+        }
     ]
 }
