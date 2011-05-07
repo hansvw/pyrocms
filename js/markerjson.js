@@ -1,3 +1,66 @@
+
+var slideshowMarkets = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-markets-italian-shoes-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-markets-italian-produce.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-markets-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-6.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-7.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-8.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-9.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-10.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-12.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-13.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-14.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-15.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-16.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-17.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowLocorotondo = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-4.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-9.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowLecce = "<div class=\"slideshow\">" +
+"<img src=\"images/trullove-puglia-lecce-5.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowMartinaFranca = "<div class=\"slideshow\">" +
+"<img src=\"images/\" width=\"270\" /> " +
+"</div>";
+
+var slideshowOstuni = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-ostuni-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-ostuni-5.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowCeglieMessapica = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-2.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-5.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowCisternino = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-1.png\" width=\"270\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-7.png\" width=\"270\" /> " +
+"</div>";
+
+var slideshowGrottaglie = "<div class=\"slideshow\">" +
+"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-1.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-5.png\" width=\"270\" /> " +
+"</div>";
+
+
+
+
+//<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/\"> on Wikipedia</a></p>
+
+
+
+
+
+
 var markerjson =
 {
     "backgroundColor" : "1",
@@ -82,17 +145,13 @@ var markerjson =
             [
                 {
                     "tabText" : "Locorotondo",
-                    "divText" : "<p>Locorotondo is quite magical!  Locorotondo is just a 15 minute drive from the trullo and the centre is a lovely place for a stroll. It has shiny clean limestone paved streets and flower filled balconies. In my book it would definitely get the prize for the best kept village!</p>",
-                    "image" : "images/trullove-puglia-trulli-locorotondo-1.png"
-                },
-                {
-                    "tabText" : "Markets",
-                    "divText" : "<p>Friday: Locorotondo:- A small but pretty market.</p>",
+                    "divText" : "<p>Locorotondo is quite magical. It is just a 15 minute drive from the trullo and the centre is a lovely place for a stroll. It has shiny clean limestone paved streets and flower filled balconies. In my book it would definitely get the prize for the best kept village." +
+                        "<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Locorotondo\">Locorotondo on Wikipedia</a></p>" + slideshowLocorotondo,
                     "image" : ""
                 },
                 {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "tabText" : "Markets",
+                    "divText" : "<p>Friday: Locorotondo:- A small but pretty market.</p>" + slideshowMarkets,
                     "image" : ""
                 }
             ]
@@ -106,24 +165,13 @@ var markerjson =
             [
                 {
                     "tabText" : "Lecce",
-                    "divText" : "<p></p>" +
-                        "<div class=\"slideshow\">" +
-                        "<img src=\"http://cloud.github.com/downloads/malsup/cycle/beach1.jpg\" width=\"200\" height=\"200\" /> " +
-                        "<img src=\"http://cloud.github.com/downloads/malsup/cycle/beach2.jpg\" width=\"200\" height=\"200\" /> " +
-                        "<img src=\"http://cloud.github.com/downloads/malsup/cycle/beach3.jpg\" width=\"200\" height=\"200\" /> " +
-                        "<img src=\"http://cloud.github.com/downloads/malsup/cycle/beach4.jpg\" width=\"200\" height=\"200\" /> " +
-                        "<img src=\"http://cloud.github.com/downloads/malsup/cycle/beach5.jpg\" width=\"200\" height=\"200\" /> " +
-                        "</div> ",
+                    "divText" : "<p>Because of the stunning Baroque architectural monuments found in the city, Lecce has been nicknamed \"The Florence of the South\". The city has a long traditional affinity with Greek culture going back to its foundation. So definitely go see the walled city center of Lecce, the aristocratic capital, citta d'arte (city of art), famous all over Italy for the soft, local stone that allows dizzying flights of fancy." +
+                        "<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Lecce\">Lecce on Wikipedia</a></p>",
                     "image" : ""
                 },
                 {
                     "tabText" : "Markets",
-                    "divText" : "<p></p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>Shop for the day's fresh produce in Lecce's public market. Select just the right variety of tomato for the day's recipes, a freshly-made cheese, a fine candidate for the evening's antipasti platter or fresh Taranto mussels at the fishmonger's shop. For the adventurous, take home a life-size religious statue constructed by local artisans that are still used in Lecce's churches.</p>" + slideshowMarkets,
                     "image" : ""
                 }
             ]
@@ -137,17 +185,12 @@ var markerjson =
             [
                 {
                     "tabText" : "Martina Franca",
-                    "divText" : "<p>Martina Franca has one of the finest old quarters in Puglia.  Baroque balconies decorated with ornate wrought iron look down on narrow alleyways that have hardly changed in centuries.  In the second  half of July and early August, the town stages the annual Festival della Vale d'Itria - a feast for opera lovers. Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed. There are many fine shops here that make an early evening 'passeggiata' particularly interesting.</p>",
+                    "divText" : "<p>Martina Franca has one of the finest old quarters in Puglia.  Baroque balconies decorated with ornate wrought iron look down on narrow alleyways that have hardly changed in centuries.  In the second  half of July and early August, the town stages the annual Festival della Vale d'Itria - a feast for opera lovers. Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed. There are many fine shops here that make an early evening 'passeggiata' particularly interesting.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Martina_Franca\">Martina Franca on Wikipedia</a></p>",
                     "image" : ""
                 },
                 {
                     "tabText" : "Markets",
-                    "divText" : "<p>Wednesday: Martina Franca, nowadays much of the town's people are employed in clothing or furniture production which means that a visit to the Wednesday morning market is a good idea and you will certainly find a bargain.</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>Wednesday: Martina Franca, nowadays much of the town's people are employed in clothing or furniture production which means that a visit to the Wednesday morning market is a good idea and you will certainly find a bargain.</p>" + slideshowMarkets,
                     "image" : ""
                 }
             ]
@@ -161,17 +204,12 @@ var markerjson =
             [
                 {
                     "tabText" : "Ostuni",
-                    "divText" : "<p>Ostuni, known as the White City because of the proliferation of white-washed stone buildings, resembles a North-African Arab Medina due to the seemingly chaotic tangle of narrow cobblestone streets.  Rising above it all in sombre brown stone is the beautiful 15th century Gothic cathedral.</p>",
+                    "divText" : "<p>Ostuni, known as the White City because of the proliferation of white-washed stone buildings, resembles a North-African Arab Medina due to the seemingly chaotic tangle of narrow cobblestone streets.  Rising above it all in sombre brown stone is the beautiful 15th century Gothic cathedral.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Ostuni\">Ostuni on Wikipedia</a></p>" + slideshowOstuni,
                     "image" : ""
                 },
                 {
                     "tabText" : "Markets",
-                    "divText" : "<p>Saturday: Ostuni, a big market on the outskirts of Ostuni, head for the Francavilla road around Ostuni and the market is on your left. It is bigger than it seems and you will need an early start in hot weather to get through it all. Look out for shoes, bags, accessories, Italian crafts and of course fruit and vegetables that are in season.</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>Saturday: Ostuni, a big market on the outskirts of Ostuni, head for the Francavilla road around Ostuni and the market is on your left. It is bigger than it seems and you will need an early start in hot weather to get through it all. Look out for shoes, bags, accessories, Italian crafts and of course fruit and vegetables that are in season.</p>" + slideshowMarkets,
                     "image" : ""
                 }
             ]
@@ -185,17 +223,7 @@ var markerjson =
             [
                 {
                     "tabText" : "Ceglie Messapica",
-                    "divText" : "<p>Ceglie Messapica can be entered via two doors: Giuso and Monterone. From here, through a sinuous path, one will arrive at the climb up to the 'Centro Scaloni,' existing since Messapian times and updated during the Medieval period. It leads to the Castle area. The village centre is dominated by the presence of the Castle, initiated during Norman times (11th Century AD). Ceglie Messapica hasn't the Disney qualities of a postcard perfect place that has been gussied up for tourists. It is more authentic (meaning there are more locals than tourists) and has more 'local' feel than lovely towns like Ostuni and Martina Franca.  Local people cherish the character of this medieval town, yet there's not a mono-economy of tourism. Street architecture, traffic, people and day-to-day life seem a bit contradictory, random, bohemian and somewhat zany.  That's what we like about Ceglie Messapica.</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Markets",
-                    "divText" : "<p></p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>Ceglie Messapica can be entered via two doors: Giuso and Monterone. From here, through a sinuous path, one will arrive at the climb up to the 'Centro Scaloni,' existing since Messapian times and updated during the Medieval period. It leads to the Castle area. The village centre is dominated by the presence of the Castle, initiated during Norman times (11th Century AD). Ceglie Messapica hasn't the Disney qualities of a postcard perfect place that has been gussied up for tourists. It is more authentic (meaning there are more locals than tourists) and has more 'local' feel than lovely towns like Ostuni and Martina Franca.  Local people cherish the character of this medieval town, yet there's not a mono-economy of tourism. Street architecture, traffic, people and day-to-day life seem a bit contradictory, random, bohemian and somewhat zany.  That's what we like about Ceglie Messapica.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Ceglie_Messapica\">Ceglie Messapica on Wikipedia</a></p>" + slideshowCeglieMessapica,
                     "image" : ""
                 }
             ]
@@ -209,41 +237,12 @@ var markerjson =
             [
                 {
                     "tabText" : "Cisternino",
-                    "divText" : "<p>Cisternino is a well kept secret. Think of an Italian hill top town and Cisternino fits that description. Even the Italians think it special and have listed it as One of the Best Small Towns in Italy. 'Uno dei Borghi piu Belli D'Italia' says the sign outside the town. This is certainly because of the position and the architecture, the food, the people, what's on all year round and the happy combination of all these. In summer a good idea is to visit it in the evening, as all the shops in the old town are open, lots of people are around and you can sit in the local \"piazza\" and listen to music.</p>",
+                    "divText" : "<p>Cisternino is a well kept secret. Think of an Italian hill top town and Cisternino fits that description. Even the Italians think it special and have listed it as One of the Best Small Towns in Italy. 'Uno dei Borghi piu Belli D'Italia' says the sign outside the town. This is certainly because of the position and the architecture, the food, the people, what's on all year round and the happy combination of all these. In summer a good idea is to visit it in the evening, as all the shops in the old town are open, lots of people are around and you can sit in the local \"piazza\" and listen to music.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Cisternino\">Cisternino on Wikipedia</a></p>" + slideshowCisternino,
                     "image" : ""
                 },
                 {
                     "tabText" : "Markets",
-                    "divText" : "<p>Monday: Cisternino, for fruit and vegetables, clothes, shoes and household neccessities. Smallish with nearby bars which makes it a bearable morning with young children in tow!</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
-                    "image" : ""
-                }
-            ]
-        },
-        {
-            "id" : "locorotondoMarker",
-            "imageFile" : "images/pushpin.png",
-            "lat" : 40.7554,
-            "lng" : 17.3263,
-            "tabs" :
-            [
-                {
-                    "tabText" : "Locorotondo",
-                    "divText" : "<p>Locorotondo is quite magical!  Locorotondo is just a 15 minute drive from the trullo and the centre is a lovely place for a stroll. It has shiny clean limestone paved streets and flower filled balconies. In my book it would definitely get the prize for the best kept village!</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Markets",
-                    "divText" : "<p>Friday: Locorotondo:- A small but pretty market.</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>Monday: Cisternino, for fruit and vegetables, clothes, shoes and household neccessities. Smallish with nearby bars which makes it a bearable morning with young children in tow!</p>" + slideshowMarkets,
                     "image" : ""
                 }
             ]
@@ -257,17 +256,7 @@ var markerjson =
             [
                 {
                     "tabText" : "Grottaglie",
-                    "divText" : "<p>The hub of ceramics production is Grottaglie. In the heart of this characteristic city, behind the medieval castle, lies a centuries-old quarter of ceramicists who developed their trade by following age-old working methods.  There are two main products of the Grottaglie figurine tradition: the \"Bianchi di Grottaglie\" or \"white\" artistic production that exalts pure form through the use of white stanniferous glaze with no other decoration and typical of a more elite production, and the more characteristic rustic and popular ceramics flaunting a palette of colours that ranges from green, ochre, blue, and manganese.</p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Markets",
-                    "divText" : "<p></p>",
-                    "image" : ""
-                },
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "",
+                    "divText" : "<p>The hub of ceramics production is Grottaglie. In the heart of this characteristic city, behind the medieval castle, lies a centuries-old quarter of ceramicists who developed their trade by following age-old working methods.  There are two main products of the Grottaglie figurine tradition: the \"Bianchi di Grottaglie\" or \"white\" artistic production that exalts pure form through the use of white stanniferous glaze with no other decoration and typical of a more elite production, and the more characteristic rustic and popular ceramics flaunting a palette of colours that ranges from green, ochre, blue, and manganese.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Grottaglie\">Grottaglie on Wikipedia</a></p>" + slideshowGrottaglie,
                     "image" : ""
                 }
             ]

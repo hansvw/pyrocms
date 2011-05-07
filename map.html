@@ -17,20 +17,27 @@
             font-size: 16px;
             color: #0B71A8;
         }
-        p {font-size: 12px}
+        p {font-size: 14px}
         #markerTrulloveStyle {
             font-size: 16px;
             color: #0B71A8;
         }
+
+        .slideshow {width: 290px; margin: 0px 0px 0px 5px;}
+        .slideshow img {margin: 0px 0px 0px 10px; padding: 0px; border: 1px solid #ccc; background-color: #eee; display: none;}
 	</style>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=panoramio&sensor=false"></script>
 	<script type="text/javascript" src="js/geoxml3.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <!-- include Cycle plugin -->
+    <script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
 	<script type="text/javascript" src="js/infobubble.js"></script>
-	<script type="text/javascript" src="js/markerjson.json"></script>
+	<script type="text/javascript" src="js/markerjson.js"></script>
 	<script type="text/javascript" src="js/trullove.js"></script>
+
   </head>
   <body>
-    <div id="map_canvas" style="width:100%; height:100%; float: right; display: inline;"></div>
-    <script type="text/javascript">window.onload();</script>
+    <div id="map_canvas" style="width:100%; height:100%; float: right; display: inline;">
+    </div>
   </body>
 </html>

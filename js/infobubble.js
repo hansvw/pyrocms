@@ -1015,6 +1015,16 @@ InfoBubble.prototype.open = function(opt_map, opt_anchor) {
       that.panToView();
     }, 200);
   }
+
+//  window.setTimeout(function(){
+//      if($('.slideshow'))
+//            $('.slideshow').cycle(
+//              {
+//                fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+//              });
+//  }, 5000);
+        
+
 };
 InfoBubble.prototype['open'] = InfoBubble.prototype.open;
 
