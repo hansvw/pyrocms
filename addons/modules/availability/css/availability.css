@@ -159,6 +159,15 @@ label
     background: url(../img/rcp.png);
 }
 
+.calendar td.pending-pending
+{
+    background: url(../img/rpp.png);
+}
+
+.calendar td.confirmed-confirmed
+{
+    background: url(../img/rcc.png);
+}
 
 .calendar td:hover, .calendar td.today:hover,
 .calendar td.selected:hover, .calendar td.highlighted:hover

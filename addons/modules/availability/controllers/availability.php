@@ -89,6 +89,8 @@ class Calendar
     var $confirmed_end_class = 'confirmed-end';
     var $pending_confirmed_class = 'pending-confirmed';
     var $confirmed_pending_class = 'confirmed-pending';
+    var $pending_pending_class = 'pending-pending';
+    var $confirmed_confirmed_class = 'confirmed-confirmed';
 
 	var $highlighted_dates;
 	var $default_highlighted_class = 'highlighted';
@@ -154,6 +156,11 @@ class Calendar
         $days_in_month = date("t", $month_start_date);
         $month_end_date = strtotime($year . "-" . $month . "-" . $days_in_month);
         return $month_end_date;
+    }
+
+    function check_flag($value, $flag)
+    {
+        return $value & $flag;
     }
 
 	function output_calendar($year = NULL, $month = NULL, $calendar_class = 'calendar', $reservationMap = null)
@@ -269,13 +276,21 @@ class Calendar
                     {
                         $classes[] = $this->confirmed_class;
                     }
-                    else if ($status & RSPENDINGEND & RSCONFIRMEDSTART)
+                    else if (($status & RSPENDINGEND) && ($status & RSCONFIRMEDSTART))
                     {
                         $classes[] = $this->pending_confirmed_class;
                     }
-                    else if ($status & RSCONFIRMEDEND & RSPENDINGSTART)
+                    else if (($status & RSCONFIRMEDEND) && ($status & RSPENDINGSTART))
                     {
                         $classes[] = $this->confirmed_pending_class;
+                    }
+                    else if (($status & RSPENDINGEND) && ($status & RSPENDINGSTART))
+                    {
+                        $classes[] = $this->pending_pending_class;
+                    }
+                    else if (($status & RSCONFIRMEDEND) && ($status & RSPCONFIRMEDSTART))
+                    {
+                        $classes[] = $this->confirmed_confirmed_class;
                     }
                     else if ($status & RSPENDINGSTART)
                     {
