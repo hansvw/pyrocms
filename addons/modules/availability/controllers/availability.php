@@ -288,7 +288,7 @@ class Calendar
                     {
                         $classes[] = $this->pending_pending_class;
                     }
-                    else if (($status & RSCONFIRMEDEND) && ($status & RSPCONFIRMEDSTART))
+                    else if (($status & RSCONFIRMEDEND) && ($status & RSCONFIRMEDSTART))
                     {
                         $classes[] = $this->confirmed_confirmed_class;
                     }
