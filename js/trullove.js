@@ -40,8 +40,9 @@
             icon: this.markerdata.imageFile
         });
 
-        var infoBubble = new InfoBubble({
-          maxWidth: 600
+        var infoBubble = new InfoBubble(
+        {
+            maxWidth: 600
         });
 
         for(var i = 0; i < this.markerdata['tabs'].length; i++)
@@ -50,8 +51,7 @@
             var optionalImage = "";
             if(this.markerdata['tabs'][i]['image'])
             {
-                optionalImage = "<img src=\"" + this.markerdata['tabs'][i]['image'] + "\" width=\"300\" length=\"200\" />";
-                //alert(optionalImage);
+                optionalImage = "<img src=\"" + this.markerdata['tabs'][i]['image'] + "\" width=\"300\"/>";
             }
             div.innerHTML =  optionalImage + this.markerdata['tabs'][i].divText;
             infoBubble.addTab("<span id=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
@@ -62,17 +62,20 @@
             if (!infoBubble.isOpen())
             {
                 infoBubble.open(map, marker);
-                google.maps.event.addListener(infoBubble, 'domready', function() {
-                // whatever you want to do once the DOM is ready
-                if($('.slideshow'))
-                    $('.slideshow').cycle(
+                google.maps.event.addListener(infoBubble, 'domready', function()
+                {
+                    if($('.slideshow'))
                     {
-                        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-                        speed: 400,
-                        timeout: 4000,
-                        random: 1,
-                        fit: 1          
-                    });
+                        $('.slideshow').css('display','block');
+                        $('.slideshow').cycle(
+                        {
+                            fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                            speed: 400,
+                            timeout: 3000,
+                            random: 1,
+                            fit: 1
+                        });
+                    }
                 });
             }
         });
@@ -81,7 +84,6 @@
     function initialize()
     {
         var zoom = 9;
-
 
         var mapOptions =
             {
@@ -99,10 +101,9 @@
             marker.add(map);
         }
 
-        var panoramioLayer1 = new google.maps.panoramio.PanoramioLayer();
-        // panoramioLayer1.setTag('beach');
-        panoramioLayer1.setUserId("5590243");
-        panoramioLayer1.setMap(map);
+//        var panoramioLayer1 = new google.maps.panoramio.PanoramioLayer();
+//        panoramioLayer1.setUserId("5590243");
+//        panoramioLayer1.setMap(map);
         
 //        var panoramioLayer2 = new google.maps.panoramio.PanoramioLayer();
 //        panoramioLayer2.setTag('trulli');
@@ -124,11 +125,6 @@
 //        panoramioLayer5.setTag('monte trazzonara');
 //        panoramioLayer5.setMap(map);
 
-
-
-
-
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
-
     }

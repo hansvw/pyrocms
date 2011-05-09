@@ -1015,16 +1015,6 @@ InfoBubble.prototype.open = function(opt_map, opt_anchor) {
       that.panToView();
     }, 200);
   }
-
-//  window.setTimeout(function(){
-//      if($('.slideshow'))
-//            $('.slideshow').cycle(
-//              {
-//                fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-//              });
-//  }, 5000);
-        
-
 };
 InfoBubble.prototype['open'] = InfoBubble.prototype.open;
 
@@ -1195,13 +1185,15 @@ InfoBubble.prototype.content_changed = function() {
 
     var that = this;
     var images = this.content_.getElementsByTagName('IMG');
-    for (var i = 0, image; image = images[i]; i++) {
+    for (var i = 0, image; image = images[i]; i++)
+    {
       // Because we don't know the size of an image till it loads, add a
       // listener to the image load so the marker can resize and reposition
       // itself to be the correct height.
-      google.maps.event.addDomListener(image, 'load', function() {
-        that.imageLoaded_();
-      });
+          google.maps.event.addDomListener(image, 'load', function()
+          {
+            that.imageLoaded_();
+          });
     }
     google.maps.event.trigger(this, 'domready');
   }
@@ -1215,12 +1207,14 @@ InfoBubble.prototype['content_changed'] =
  * Image loaded
  * @private
  */
-InfoBubble.prototype.imageLoaded_ = function() {
-  var pan = !!!this.get('disableAutoPan');
-  this.redraw_();
-  if (pan && (this.tabs_.length == 0 || this.activeTab_.index == 0)) {
-    this.panToView();
-  }
+InfoBubble.prototype.imageLoaded_ = function()
+{
+    var pan = !!!this.get('disableAutoPan');
+    this.redraw_();
+    if (pan && (this.tabs_.length == 0 || this.activeTab_.index == 0))
+    {
+        this.panToView();
+    }
 };
 
 /**

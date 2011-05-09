@@ -1,65 +1,54 @@
-
 var slideshowMarkets = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-markets-italian-shoes-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-markets-italian-produce.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-markets-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-6.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-7.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-8.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-9.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-10.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-12.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-13.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-14.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-15.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-16.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-markets-17.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-markets-italian-shoes-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-markets-italian-produce.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-markets-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-6.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-7.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-8.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-9.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-10.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-12.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-13.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-14.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-15.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-16.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-markets-17.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowLocorotondo = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-4.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-9.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-4.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-locorotondo-9.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowLecce = "<div class=\"slideshow\">" +
-"<img src=\"images/trullove-puglia-lecce-5.png\" width=\"270\" /> " +
+"<img src=\"images/trullove-puglia-lecce-5.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowMartinaFranca = "<div class=\"slideshow\">" +
-"<img src=\"images/\" width=\"270\" /> " +
+"<img src=\"images/\" width=\"174\" /> " +
 "</div>";
 
 var slideshowOstuni = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-ostuni-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-ostuni-5.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-ostuni-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-ostuni-5.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowCeglieMessapica = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-ceglie-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-ceglie-2.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-ceglie-5.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-2.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-ceglie-5.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowCisternino = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-1.png\" width=\"270\"/> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-7.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-cisternino-7.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
 
 var slideshowGrottaglie = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-1.png\" width=\"270\" /> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-5.png\" width=\"270\" /> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-1.png\" width=\"174\" height=\"131\"/> " +
+"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-5.png\" width=\"174\" height=\"131\"/> " +
 "</div>";
-
-
-
-
-//<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/\"> on Wikipedia</a></p>
-
-
-
-
-
 
 var markerjson =
 {
@@ -146,7 +135,7 @@ var markerjson =
                 {
                     "tabText" : "Locorotondo",
                     "divText" : "<p>Locorotondo is quite magical. It is just a 15 minute drive from the trullo and the centre is a lovely place for a stroll. It has shiny clean limestone paved streets and flower filled balconies. In my book it would definitely get the prize for the best kept village." +
-                        "<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Locorotondo\">Locorotondo on Wikipedia</a></p>" + slideshowLocorotondo,
+                        "</p><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Locorotondo\">Locorotondo on Wikipedia</a>" + slideshowLocorotondo,
                     "image" : ""
                 },
                 {
