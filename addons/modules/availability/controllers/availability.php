@@ -269,6 +269,14 @@ class Calendar
                     {
                         $classes[] = $this->confirmed_class;
                     }
+                    else if ($status & RSPENDINGEND & RSCONFIRMEDSTART)
+                    {
+                        $classes[] = $this->pending_confirmed_class;
+                    }
+                    else if ($status & RSCONFIRMEDEND & RSPENDINGSTART)
+                    {
+                        $classes[] = $this->confirmed_pending_class;
+                    }
                     else if ($status & RSPENDINGSTART)
                     {
                         $classes[] = $this->pending_start_class;
