@@ -1,4 +1,4 @@
-<?php echo form_open('yearcalendar');?>
+<?php echo form_open('availability');?>
     <div class="colmask">
         <div class="colmid">
             <div class="colleft">
