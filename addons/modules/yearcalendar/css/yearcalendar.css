@@ -1,0 +1,216 @@
+/* CSS Document */
+
+label
+{
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+.legend
+{
+	margin: 0 0 50px 40px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+.legend td
+{
+	border: none;
+    height: 20px;
+	text-align: center;
+    vertical-align: middle;
+}
+
+.legend td.legendtext
+{
+    padding-right: 20px;
+}
+
+.legend td.legendentry
+{
+    padding-left: 10px;
+}
+
+.legend td.ravailable
+{
+    width: 20px;
+    background: url(../img/rfree.png);
+}
+
+.legend td.rpending
+{
+    width: 20px;
+    background: url(../img/rpending.png);
+}
+
+.legend td.rconfirmed
+{
+    width: 20px;
+    background: url(../img/rconfirmed.png);
+}
+
+.legend td.rchangeover
+{
+    width: 20px;
+    background: url(../img/rchangeover.png);
+}
+
+.calendar
+{
+	margin: 0 0 50px 40px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+.calendar ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+.calendar caption
+{
+	margin: 0;
+	padding: .3em 0;
+	background: #ffa51e;
+}
+
+.calendar th
+{
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	background: #fff;
+}
+
+.calendar td
+{
+	border: 1px solid #fff;
+	padding: .1em .3em ;
+    height: 20px;
+	text-align: center;
+}
+
+.calendar a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.calendar td a:link
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.calendar td.today
+{
+	background: #ffc;
+}
+
+.calendar td.selected
+{
+	border: 1px dotted #ff7800;
+}
+
+.calendar td.highlighted
+{
+	background: #fc9;
+}
+
+.calendar td.pending-start
+{
+    background: url(../img/rpstart.png);
+}
+
+.calendar td.pending
+{
+    background: url(../img/rpending.png);
+}
+
+.calendar td.pending-end
+{
+    background: url(../img/rpend.png);
+}
+
+.calendar td.confirmed-start
+{
+    background: url(../img/rcstart.png);
+}
+
+.calendar td.confirmed
+{
+    background: url(../img/rconfirmed.png);
+}
+
+.calendar td.confirmed-end
+{
+    background: url(../img/rcend.png);
+}
+
+.calendar td.pending-confirmed
+{
+    background: url(../img/rpc.png);
+}
+
+.calendar td.confirmed-pending
+{
+    background: url(../img/rcp.png);
+}
+
+
+.calendar td:hover, .calendar td.today:hover, 
+.calendar td.selected:hover, .calendar td.highlighted:hover
+{
+	background: #cff;
+	border: 1px solid #09f;
+}
+
+.calendar table
+{
+    border-collapse: separate;
+}
+
+.calendar table td.pad
+{
+	color: #999;
+	background: #fff;
+}
+
+.calendar table td.pad:hover
+{
+	background: none;
+	border: 0;
+}
+
+table.calendar td.pad {
+	color: #999;
+	background: #fff;
+	}
+table.calendar td.pad:hover {
+	background: none;
+	border: 0;
+	}
+	
+.sunday, .saturday {
+	background: #f0f0f0;
+	}
+	
+#year {
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	}
+#year:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+#year li {
+	float: left;
+	padding: 0 .5em .5em 0;
+	height: 180px;
+	}
