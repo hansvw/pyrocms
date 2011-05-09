@@ -131,10 +131,10 @@ class Availability_m extends MY_Model
 		foreach ($query->result_array() as $row_event)
 		{
             $status = RSFREE;
-
+            
             if($row_event['status'] == 'pending')
             {
-                if(isset($reservationMap[$row_event['startdate']]))
+                if(array_key_exists($row_event['startdate'],$reservationMap))
                 {
                     $reservationMap[$row_event['startdate']] |= RSPENDINGSTART;
                 }
@@ -143,7 +143,7 @@ class Availability_m extends MY_Model
                     $reservationMap[$row_event['startdate']] = RSPENDINGSTART;
                 }
 
-                if(isset($reservationMap[$row_event['enddate']]))
+                if(array_key_exists($row_event['enddate'],$reservationMap))
                 {
                     $reservationMap[$row_event['enddate']] |= RSPENDINGEND;
                 }
@@ -154,7 +154,7 @@ class Availability_m extends MY_Model
             }
             else if ($row_event['status'] == 'confirmed')
             {
-                if(isset($reservationMap[$row_event['startdate']]))
+                if(array_key_exists($row_event['startdate'],$reservationMap))
                 {
                     $reservationMap[$row_event['startdate']] |= RSCONFIRMEDSTART;
                 }
@@ -163,7 +163,7 @@ class Availability_m extends MY_Model
                     $reservationMap[$row_event['startdate']] = RSCONFIRMEDSTART;
                 }
 
-                if(isset($reservationMap['enddate']))
+                if(array_key_exists($row_event['enddate'],$reservationMap))
                 {
                     $reservationMap[$row_event['enddate']] |= RSCONFIRMEDEND;
                 }
