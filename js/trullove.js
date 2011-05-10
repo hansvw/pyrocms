@@ -25,6 +25,53 @@
         return this;
     };
 
+    function Slide(slidedata)
+    {
+        this.data = slidedata;
+    }
+
+    Slide.method('toHtml', function()
+    {
+        var html = '';
+
+        if(this.data['url'])
+        {
+            html += '<a href=\"' + this.data['url'] + '\">';
+        }
+
+        html += '<img src="' + this.data['src'] +
+            '" height="' + this.data['height'] +
+            '" width="' + this.data['width'] +
+            '" alt="' + this.data['name'] + '"/>'
+
+        if(this.data['url'])
+        {
+            html += '</a>';
+        }
+
+        return html;
+    });
+
+    function SlideShow(id, slideshowdata)
+    {
+        this.id = id;
+        this.data = slideshowdata;
+    }
+
+    SlideShow.method('toHtml', function()
+    {
+        var html = '<div id=' + this.id + ' class="slideshow">';
+
+        for(var i = 0; i < this.data.length; i++)
+        {
+            var slide = new Slide(this.data[i]);
+            html += slide.toHtml();
+        }
+
+        html += '</div>';
+        return html;
+    });
+
     function InfoBubbleMarker(markerdata)
     {
         this.markerdata = markerdata;
@@ -42,18 +89,58 @@
 
         var infoBubble = new InfoBubble(
         {
-            maxWidth: 600
+            minWidth: 600
         });
 
         for(var i = 0; i < this.markerdata['tabs'].length; i++)
         {
             var div = document.createElement('div');
-            var optionalImage = "";
-            if(this.markerdata['tabs'][i]['image'])
+            div.className="infotab";
+            div.id = 'tab_'+this.markerdata['id'] + i;
+
+            var html = '<div class="left">';
+            if(this.markerdata['tabs'][i]['slideshow'] &&
+               this.markerdata['tabs'][i]['slideshow'].length > 0)
             {
-                optionalImage = "<img src=\"" + this.markerdata['tabs'][i]['image'] + "\" width=\"300\"/>";
+                var slideShow = new SlideShow(this.markerdata['id'] + i,
+                    this.markerdata['tabs'][i]['slideshow']);
+                html += slideShow.toHtml();
             }
-            div.innerHTML =  optionalImage + this.markerdata['tabs'][i].divText;
+            html += '</div>';
+
+            html += '<div class="right">';
+            html += this.markerdata['tabs'][i].divText;
+            html += "</div>";
+
+            div.innerHTML = html;
+
+//            div.innerHTML = '<div class="left">';
+//            if(this.markerdata['tabs'][i]['slideshow'] &&
+//               this.markerdata['tabs'][i]['slideshow'].length > 0)
+//            {
+//                var slideShow = new SlideShow(this.markerdata['id'] + i,
+//                    this.markerdata['tabs'][i]['slideshow']);
+//                div.innerHTML += slideShow.toHtml();
+//            }
+//
+//            div.innerHTML += '</div>';
+//            div.innerHTML += '<div class="right">';
+//            div.innerHTML += this.markerdata['tabs'][i].divText;
+//            div.innerHTML += "</div>";
+
+//            var optionalImage = "";
+//            if(this.markerdata['tabs'][i]['image'])
+//            {
+//                optionalImage = "<img src=\"" + this.markerdata['tabs'][i]['image'] + "\" width=\"300\"/>";
+//            }
+//            div.innerHTML =  optionalImage + this.markerdata['tabs'][i].divText;
+//            if(this.markerdata['tabs'][i]['slideshow'] &&
+//               this.markerdata['tabs'][i]['slideshow'].length > 0)
+//            {
+//                var slideShow = new SlideShow(this.markerdata['id'] + i,
+//                    this.markerdata['tabs'][i]['slideshow']);
+//                div.innerHTML += slideShow.toHtml();
+//            }
             infoBubble.addTab("<span id=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
         }
         
@@ -66,7 +153,7 @@
                 {
                     if($('.slideshow'))
                     {
-                        $('.slideshow').css('display','block');
+                        $('.slideshow').show();
                         $('.slideshow').cycle(
                         {
                             fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...

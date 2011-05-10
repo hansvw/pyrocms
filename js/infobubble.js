@@ -42,51 +42,63 @@ function InfoBubble(opt_options) {
 
   var options = opt_options || {};
 
-  if (options['backgroundColor'] == undefined) {
+  if (options['backgroundColor'] == undefined)
+  {
     options['backgroundColor'] = this.BACKGROUND_COLOR_;
   }
 
-  if (options['borderColor'] == undefined) {
+  if (options['borderColor'] == undefined)
+  {
     options['borderColor'] = this.BORDER_COLOR_;
   }
 
-  if (options['borderRadius'] == undefined) {
+  if (options['borderRadius'] == undefined)
+  {
     options['borderRadius'] = this.BORDER_RADIUS_;
   }
 
-  if (options['borderWidth'] == undefined) {
+  if (options['borderWidth'] == undefined)
+  {
     options['borderWidth'] = this.BORDER_WIDTH_;
   }
 
-  if (options['padding'] == undefined) {
+  if (options['padding'] == undefined)
+  {
     options['padding'] = this.PADDING_;
   }
 
-  if (options['arrowPosition'] == undefined) {
+  if (options['arrowPosition'] == undefined)
+  {
     options['arrowPosition'] = this.ARROW_POSITION_;
   }
 
-  if (options['disableAutoPan'] == undefined) {
+  if (options['disableAutoPan'] == undefined)
+  {
     options['disableAutoPan'] = false;
   }
 
-  if (options['disableAnimation'] == undefined) {
+  if (options['disableAnimation'] == undefined)
+  {
     options['disableAnimation'] = false;
   }
 
-  if (options['minWidth'] == undefined) {
+  if (options['minWidth'] == undefined)
+  {
     options['minWidth'] = this.MIN_WIDTH_;
   }
 
-  if (options['shadowStyle'] == undefined) {
+  if (options['shadowStyle'] == undefined)
+  {
     options['shadowStyle'] = this.SHADOW_STYLE_;
   }
 
-  if (options['arrowSize'] == undefined) {
+  if (options['arrowSize'] == undefined)
+  {
     options['arrowSize'] = this.ARROW_SIZE_;
   }
 
-  if (options['arrowStyle'] == undefined) {
+  if (options['arrowStyle'] == undefined)
+  {
     options['arrowStyle'] = this.ARROW_STYLE_;
   }
 
@@ -923,6 +935,20 @@ InfoBubble.prototype.draw = function() {
       this.bubbleShadow_.style['height'] = this.px(2);
       break;
   }
+
+  if($('.slideshow'))
+  {
+    $('.slideshow').show();
+    $('.slideshow').cycle(
+    {
+        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+        speed: 400,
+        timeout: 3000,
+        random: 1,
+        fit: 1
+    });
+  }
+
 };
 InfoBubble.prototype['draw'] = InfoBubble.prototype.draw;
 
@@ -1177,8 +1203,10 @@ InfoBubble.prototype.content_changed = function() {
 
   this.removeChildren_(this.content_);
   var content = this.getContent();
-  if (content) {
-    if (typeof content == 'string') {
+  if (content)
+  {
+    if (typeof content == 'string')
+    {
       content = this.htmlToDocumentFragment_(content);
     }
     this.content_.appendChild(content);
@@ -1187,12 +1215,12 @@ InfoBubble.prototype.content_changed = function() {
     var images = this.content_.getElementsByTagName('IMG');
     for (var i = 0, image; image = images[i]; i++)
     {
-      // Because we don't know the size of an image till it loads, add a
-      // listener to the image load so the marker can resize and reposition
-      // itself to be the correct height.
+      /// Because we don't know the size of an image till it loads, add a
+      /// listener to the image load so the marker can resize and reposition
+      /// itself to be the correct height.
           google.maps.event.addDomListener(image, 'load', function()
           {
-            that.imageLoaded_();
+                that.imageLoaded_();
           });
     }
     google.maps.event.trigger(this, 'domready');
@@ -1469,7 +1497,7 @@ InfoBubble.prototype.addTab = function(label, content) {
 InfoBubble.prototype['addTab'] = InfoBubble.prototype.addTab;
 
 /**
- * Update a tab at a speicifc index
+ * Update a tab at a specific index
  *
  * @param {number} index The index of the tab.
  * @param {?string} opt_label The label to change to.
@@ -1588,7 +1616,8 @@ InfoBubble.prototype.getElementSize_ = function(element, opt_maxWidth,
  * Redraw the InfoBubble
  * @private
  */
-InfoBubble.prototype.redraw_ = function() {
+InfoBubble.prototype.redraw_ = function()
+{
   this.figureOutSize_();
   this.positionCloseButton_();
   this.draw();
