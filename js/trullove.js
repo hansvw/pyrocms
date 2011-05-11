@@ -122,21 +122,21 @@
             if (!infoBubble.isOpen())
             {
                 infoBubble.open(map, marker);
-//                google.maps.event.addListener(infoBubble, 'domready', function()
-//                {
-//                    if($('.slideshow'))
-//                    {
-//                        $('.slideshow').show();
-//                        $('.slideshow').cycle(
-//                        {
-//                            fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-//                            speed: 400,
-//                            timeout: 3000,
-//                            random: 1,
-//                            fit: 1
-//                        });
-//                    }
-//                });
+                google.maps.event.addListener(infoBubble, 'domready', function()
+                {
+                    if($('.slideshow'))
+                    {
+                        $('.slideshow').show();
+                        $('.slideshow').cycle(
+                        {
+                            fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                            speed: 400,
+                            timeout: 3000,
+                            random: 1,
+                            fit: 1
+                        });
+                    }
+                });
             }
         });
     });

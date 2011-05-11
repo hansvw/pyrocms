@@ -936,16 +936,16 @@ InfoBubble.prototype.draw = function() {
       break;
   }
 
-  if($('.slideshow'))
-  {
-    $('.slideshow').show();
-    $('.slideshow').cycle(
-    {
-        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-        speed: 400,
-        timeout: 3000
-    });
-  }
+//  if($('.slideshow'))
+//  {
+//    $('.slideshow').show();
+//    $('.slideshow').cycle(
+//    {
+//        fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+//        speed: 400,
+//        timeout: 3000
+//    });
+//  }
 
 };
 InfoBubble.prototype['draw'] = InfoBubble.prototype.draw;
