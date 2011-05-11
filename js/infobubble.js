@@ -1214,7 +1214,7 @@ InfoBubble.prototype.content_changed = function() {
       // Because we don't know the size of an image till it loads, add a
       // listener to the image load so the marker can resize and reposition
       // itself to be the correct height.
-      google.maps.event.addDomListener(image, 'onload', function() {
+      google.maps.event.addDomListener(image, 'load', function() {
         that.imageLoaded_();
       });
     }

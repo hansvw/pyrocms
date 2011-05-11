@@ -1,8 +1,3 @@
-var slideshowGrottaglie = "<div class=\"slideshow\">" +
-"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-1.png\" width=\"174\" height=\"131\"/> " +
-"<img src=\"images/thumbs/trullove-puglia-trulli-grottaglie-5.png\" width=\"174\" height=\"131\"/> " +
-"</div>";
-
 var markerjson =
 {
     "backgroundColor" : "1",
