@@ -89,8 +89,10 @@
 
         var infoBubble = new InfoBubble(
         {
+            shadowStyle: 0,
             minWidth: 600,
-            minHeight: 200
+            minHeight: 200,
+            backgroundColor: '#fff'
         });
 
 //        google.maps.event.addListener(infoBubble, 'domready', function()

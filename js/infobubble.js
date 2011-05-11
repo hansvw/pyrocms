@@ -1266,7 +1266,7 @@ InfoBubble.prototype.updateTabStyles_ = function() {
  * @private
  * @param {Element} tab The tab to style.
  */
-InfoBubble.prototype.setTabStyleDeprecated_ = function(tab) {
+InfoBubble.prototype.setTabStyle_ = function(tab) {
   var backgroundColor = this.get('backgroundColor');
   var borderColor = this.get('borderColor');
   var borderRadius = this.getBorderRadius_();
@@ -1318,7 +1318,7 @@ InfoBubble.prototype.setTabStyleDeprecated_ = function(tab) {
  * @private
  * @param {Element} tab The tab to style.
  */
-InfoBubble.prototype.setTabStyle_ = function(tab) {
+InfoBubble.prototype.setTabStyleOriginal_ = function(tab) {
   var backgroundColor = this.get('backgroundColor');
   var borderColor = this.get('borderColor');
   var borderRadius = this.getBorderRadius_();
