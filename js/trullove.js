@@ -129,8 +129,8 @@
 
             div.innerHTML = html;
 
-            // infoBubble.addTab("<span class=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
-            infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
+            infoBubble.addTab("<span class=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
+            // infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
         }
         
         google.maps.event.addListener(marker, 'click', function()
