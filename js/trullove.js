@@ -114,33 +114,6 @@
 
             div.innerHTML = html;
 
-//            div.innerHTML = '<div class="left">';
-//            if(this.markerdata['tabs'][i]['slideshow'] &&
-//               this.markerdata['tabs'][i]['slideshow'].length > 0)
-//            {
-//                var slideShow = new SlideShow(this.markerdata['id'] + i,
-//                    this.markerdata['tabs'][i]['slideshow']);
-//                div.innerHTML += slideShow.toHtml();
-//            }
-//
-//            div.innerHTML += '</div>';
-//            div.innerHTML += '<div class="right">';
-//            div.innerHTML += this.markerdata['tabs'][i].divText;
-//            div.innerHTML += "</div>";
-
-//            var optionalImage = "";
-//            if(this.markerdata['tabs'][i]['image'])
-//            {
-//                optionalImage = "<img src=\"" + this.markerdata['tabs'][i]['image'] + "\" width=\"300\"/>";
-//            }
-//            div.innerHTML =  optionalImage + this.markerdata['tabs'][i].divText;
-//            if(this.markerdata['tabs'][i]['slideshow'] &&
-//               this.markerdata['tabs'][i]['slideshow'].length > 0)
-//            {
-//                var slideShow = new SlideShow(this.markerdata['id'] + i,
-//                    this.markerdata['tabs'][i]['slideshow']);
-//                div.innerHTML += slideShow.toHtml();
-//            }
             infoBubble.addTab("<span id=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
         }
         
@@ -149,21 +122,21 @@
             if (!infoBubble.isOpen())
             {
                 infoBubble.open(map, marker);
-                google.maps.event.addListener(infoBubble, 'domready', function()
-                {
-                    if($('.slideshow'))
-                    {
-                        $('.slideshow').show();
-                        $('.slideshow').cycle(
-                        {
-                            fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-                            speed: 400,
-                            timeout: 3000,
-                            random: 1,
-                            fit: 1
-                        });
-                    }
-                });
+//                google.maps.event.addListener(infoBubble, 'domready', function()
+//                {
+//                    if($('.slideshow'))
+//                    {
+//                        $('.slideshow').show();
+//                        $('.slideshow').cycle(
+//                        {
+//                            fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+//                            speed: 400,
+//                            timeout: 3000,
+//                            random: 1,
+//                            fit: 1
+//                        });
+//                    }
+//                });
             }
         });
     });
