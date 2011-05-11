@@ -218,7 +218,6 @@ InfoBubble.prototype.buildDom_ = function() {
 
   var tabsContainer = this.tabsContainer_ = document.createElement('DIV');
   tabsContainer.style['position'] = 'relative';
-  tabsContainer.style['height'] = '32px';
 
   // Close button
   var close = this.close_ = document.createElement('IMG');
@@ -1267,7 +1266,7 @@ InfoBubble.prototype.updateTabStyles_ = function() {
  * @private
  * @param {Element} tab The tab to style.
  */
-InfoBubble.prototype.setTabStyle_ = function(tab) {
+InfoBubble.prototype.setTabStyleDeprecated_ = function(tab) {
   var backgroundColor = this.get('backgroundColor');
   var borderColor = this.get('borderColor');
   var borderRadius = this.getBorderRadius_();
@@ -1293,6 +1292,56 @@ InfoBubble.prototype.setTabStyle_ = function(tab) {
     'padding': this.px(padding / 2) + ' ' + this.px(padding),
     'marginRight': marginRight,
     'marginLeft' : marginLeft,
+    'whiteSpace': 'nowrap',
+    'borderRadiusTopLeft': borderRadiusPx,
+    'MozBorderRadiusTopleft': borderRadiusPx,
+    'webkitBorderTopLeftRadius': borderRadiusPx,
+    'borderRadiusTopRight': borderRadiusPx,
+    'MozBorderRadiusTopright': borderRadiusPx,
+    'webkitBorderTopRightRadius': borderRadiusPx,
+    'zIndex': index,
+    'display': 'inline'
+  };
+
+  for (var style in styles) {
+    tab.style[style] = styles[style];
+  }
+
+  var className = this.get('tabClassName');
+  if (className != undefined) {
+    tab.className += ' ' + className;
+  }
+};
+
+/**
+ * Sets the style of a tab
+ * @private
+ * @param {Element} tab The tab to style.
+ */
+InfoBubble.prototype.setTabStyle_ = function(tab) {
+  var backgroundColor = this.get('backgroundColor');
+  var borderColor = this.get('borderColor');
+  var borderRadius = this.getBorderRadius_();
+  var borderWidth = this.getBorderWidth_();
+  var padding = this.getPadding_();
+
+  var marginRight = this.px(-(Math.max(padding, borderRadius)));
+  var borderRadiusPx = this.px(borderRadius);
+
+  var index = this.baseZIndex_;
+  if (tab.index) {
+    index -= tab.index;
+  }
+
+  // The styles for the tab
+  var styles = {
+    'cssFloat': 'left',
+    'position': 'relative',
+    'cursor': 'pointer',
+    'backgroundColor': backgroundColor,
+    'border': this.px(borderWidth) + ' solid ' + borderColor,
+    'padding': this.px(padding / 2) + ' ' + this.px(padding),
+    'marginRight': marginRight,
     'whiteSpace': 'nowrap',
     'borderRadiusTopLeft': borderRadiusPx,
     'MozBorderRadiusTopleft': borderRadiusPx,
