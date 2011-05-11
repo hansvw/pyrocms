@@ -218,6 +218,7 @@ InfoBubble.prototype.buildDom_ = function() {
 
   var tabsContainer = this.tabsContainer_ = document.createElement('DIV');
   tabsContainer.style['position'] = 'relative';
+  tabsContainer.style['height'] = '32px';
 
   // Close button
   var close = this.close_ = document.createElement('IMG');
@@ -284,7 +285,7 @@ InfoBubble.prototype.buildDom_ = function() {
    * The animation for the infobubble
    * @type {string}
    */
-  this.animationName_ = '_ibani_' + Math.round(Math.random() * 10000);
+  this.animationName_ = '_aivolution_' + Math.round(Math.random() * 10000);
 
   var css = '.' + this.animationName_ + '{-webkit-animation-name:' +
       this.animationName_ + ';-webkit-animation-duration:0.5s;' +

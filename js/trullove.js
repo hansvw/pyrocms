@@ -89,7 +89,8 @@
 
         var infoBubble = new InfoBubble(
         {
-            minWidth: 600
+            minWidth: 600,
+            minHeight: 200
         });
 
 //        google.maps.event.addListener(infoBubble, 'domready', function()
@@ -128,8 +129,8 @@
 
             div.innerHTML = html;
 
-            // infoBubble.addTab("<span class=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
-            infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
+            infoBubble.addTab("<span class=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
+            // infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
         }
         
         google.maps.event.addListener(marker, 'click', function()
