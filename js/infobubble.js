@@ -943,9 +943,7 @@ InfoBubble.prototype.draw = function() {
     {
         fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
         speed: 400,
-        timeout: 3000,
-        random: 1,
-        fit: 1
+        timeout: 3000
     });
   }
 
