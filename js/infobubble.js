@@ -1210,16 +1210,13 @@ InfoBubble.prototype.content_changed = function() {
 
     var that = this;
     var images = this.content_.getElementsByTagName('IMG');
-//    for (var i = 0, image; image = images[i]; i++)
-    for(var i = 0; i < images.length; i++)
-    {
-      /// Because we don't know the size of an image till it loads, add a
-      /// listener to the image load so the marker can resize and reposition
-      /// itself to be the correct height.
-          google.maps.event.addDomListener(images[i], 'onload', function()
-          {
-                that.imageLoaded_();
-          });
+    for (var i = 0, image; image = images[i]; i++) {
+      // Because we don't know the size of an image till it loads, add a
+      // listener to the image load so the marker can resize and reposition
+      // itself to be the correct height.
+      google.maps.event.addDomListener(image, 'onload', function() {
+        that.imageLoaded_();
+      });
     }
     google.maps.event.trigger(this, 'domready');
   }
