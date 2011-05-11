@@ -431,7 +431,37 @@ var markerjson =
                     "tabText" : "Martina Franca",
                     "divText" : "<p>Martina Franca has one of the finest old quarters in Puglia.  Baroque balconies decorated with ornate wrought iron look down on narrow alleyways that have hardly changed in centuries.  In the second  half of July and early August, the town stages the annual Festival della Vale d'Itria - a feast for opera lovers. Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed. There are many fine shops here that make an early evening 'passeggiata' particularly interesting.<br /><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Martina_Franca\">Martina Franca on Wikipedia</a></p>",
                     "image" : "",
-                    "slideshow" : []
+                    "slideshow" :
+                    [
+                        {
+                            "name": "Martina Franca Basilica",
+                            "src" : "images/thumbs/martina-franca-basilica.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 131
+                        },
+                        {
+                            "name": "Martina Franca Arco San Antonio",
+                            "src" : "images/thumbs/martina-franca-arco-san-antonio.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 131                            
+                        },
+                        {
+                            "name": "Martina Franca",
+                            "src" : "images/thumbs/martina-franca-3.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 131
+                        },
+                        {
+                            "name": "Martina Franca",
+                            "src" : "images/thumbs/martina-franca-2.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 131
+                        }
+                    ]
                 },
                 {
                     "tabText" : "Markets",
