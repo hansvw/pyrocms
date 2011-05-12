@@ -91,7 +91,8 @@
         {
             shadowStyle: 1,
             minWidth: 620,
-            maxWidth: 620
+            maxWidth: 620,
+            padding: 10
         });
 
 //        google.maps.event.addListener(infoBubble, 'domready', function()

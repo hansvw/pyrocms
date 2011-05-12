@@ -1718,7 +1718,7 @@ InfoBubble.prototype.figureOutSize_ = function() {
 
       // Add up all the tab widths because they might end up being wider than
       // the content
-      tabWidth += tabSize.width;
+      tabWidth += tabSize.width + 10;
 
       if (height < tabSize.height) {
         height = tabSize.height;
