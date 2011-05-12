@@ -90,7 +90,8 @@
         var infoBubble = new InfoBubble(
         {
             shadowStyle: 1,
-            minWidth: 500
+            minWidth: 600,
+            maxWidth: 600
         });
 
 //        google.maps.event.addListener(infoBubble, 'domready', function()
