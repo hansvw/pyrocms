@@ -1160,10 +1160,17 @@ InfoBubble.prototype.removeChildren_ = function(node) {
     return;
   }
 
-  var child;
-  while (child = node.firstChild) {
+  var child = node.firstChild;
+  
+  while(child != null)
+  {
     node.removeChild(child);
+    child = node.firstChild;
   }
+
+//  while (child = node.firstChild) {
+//    node.removeChild(child);
+//  }
 };
 
 
@@ -1208,7 +1215,7 @@ InfoBubble.prototype.content_changed = function() {
     }
     this.content_.appendChild(content);
 
-    var that = this;
+/*    var that = this;
     var images = this.content_.getElementsByTagName('IMG');
     for (var i = 0, image; image = images[i]; i++) {
       // Because we don't know the size of an image till it loads, add a
@@ -1217,7 +1224,7 @@ InfoBubble.prototype.content_changed = function() {
       google.maps.event.addDomListener(image, 'load', function() {
         that.imageLoaded_();
       });
-    }
+    } */
     google.maps.event.trigger(this, 'domready');
   }
   this.redraw_();
@@ -1703,7 +1710,7 @@ InfoBubble.prototype.figureOutSize_ = function() {
     // If there are tabs then you need to check the size of each tab's content
     for (var i = 0, tab; tab = this.tabs_[i]; i++) {
       var tabSize = this.getElementSize_(tab.tab, maxWidth, maxHeight);
-      var contentSize = this.getElementSize_(tab.content, maxWidth, maxHeight);
+      var tabContentSize = this.getElementSize_(tab.content, maxWidth, maxHeight);
 
       if (width < tabSize.width) {
         width = tabSize.width;
@@ -1721,12 +1728,12 @@ InfoBubble.prototype.figureOutSize_ = function() {
         tabHeight = tabSize.height;
       }
 
-      if (width < contentSize.width) {
-        width = contentSize.width;
+      if (width < tabContentSize.width) {
+        width = tabContentSize.width;
       }
 
-      if (height < contentSize.height) {
-        height = contentSize.height;
+      if (height < tabContentSize.height) {
+        height = tabContentSize.height;
       }
     }
   } else {
@@ -1815,7 +1822,7 @@ InfoBubble.prototype['anchorPoint_changed'] = InfoBubble.prototype.anchorPoint_c
  * @private
  */
 InfoBubble.prototype.positionCloseButton_ = function() {
-  var br = this.getBorderRadius_();
+//  var br = this.getBorderRadius_();
   var bw = this.getBorderWidth_();
 
   var right = 2;
