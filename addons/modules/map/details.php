@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class Module_Monthcalendar extends Module
+class Module_Map extends Module
 {
 	public $version = '2011-1';
 
@@ -8,11 +8,11 @@ class Module_Monthcalendar extends Module
 	{
 		return array(
 			'name' => array(
-				'en' => 'Availability - Monthly Calendar',
-				
+				'en' => 'Trullove Map',
+
 			),
 			'description' => array(
-				'en' => 'Display availability of a single resource on a monthly interactive calendar.',
+				'en' => 'Shows the Trullove Villa and surrounding Towns on a Google Map',
 				),
 			'frontend' => TRUE,
 			'backend' => FALSE,
@@ -40,7 +40,7 @@ class Module_Monthcalendar extends Module
 		// Return a string containing help info
 		// You could include a file and return it here.
 		return "<h4>Overview</h4>
-		<p>Availability shows the availability of a resource on a monthly interactive calendar.</p>";
+		<p>The Map module shows Trullove and surrounding places on a Google Map</p>";
 	}
 }
 /* End of file details.php */

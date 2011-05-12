@@ -1,0 +1,50 @@
+.art-post { margin: 0;}
+.art-post-body { padding: 1px 3px 1px 1px;}
+
+#map_canvas { width: 100%; height: 400px; }
+
+.ui-state-active a{ color: #000; background-color: #e0e0e9; }
+
+.infowindow { font-family: Arial, sans-serif; font-size: small; }
+
+.markerTrulloveStyle
+{
+    color: #0B71A8;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.slideshow {width: 180px; height: 140px; margin: 0; padding: 0;}
+.slideshow a {display: none;}
+.slideshow img {margin: 0 0 0 10px; padding: 0; border: 1px solid #ccc; color: #fff; background-color: #eee;}
+
+.infotab
+{
+    font-family: Arial, sans-serif; font-size: small;
+    margin-top: 10px;
+}
+
+.infotab .left
+{
+    float: left;
+    width: 200px;
+    display: inline;
+}
+
+.infotab .right
+{
+    float: right;
+    width: 380px;
+    display: inline;
+}
+
+.infotab .left,.right p
+{
+    margin-top: 0px;
+}
+
+.infotab .right p
+{
+    margin-right: 10px;
+    text-align: justify;
+}

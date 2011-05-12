@@ -15,7 +15,7 @@ class Module_Availability extends Module
 				'en' => 'Display availability of a single resource on a calendar.',
 				),
 			'frontend' => TRUE,
-			'backend' => TRUE,
+			'backend' => FALSE,
 			'menu' => 'content'
 		);
 	}
