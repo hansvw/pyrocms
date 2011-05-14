@@ -470,7 +470,8 @@ var markerjson =
                     "divText" : "<p>Martina Franca has one of the finest old quarters in Puglia.  Baroque balconies decorated with ornate wrought iron look down on narrow alleyways that have hardly changed in centuries.</p>"+
                                 "<p>In the second  half of July and early August, the town stages the annual Festival della Valle d'Itria - a feast for opera lovers. The primary aim of the festival is to present obscure, " +
                                 "neglected or rarely performed works, and often works in the standard operatic repertoire are given in their original versions (such as Verdi’s original 1857 version of Simon Boccanegra).</p>" +
-                                "<p>Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed. There are many fine shops here that make an early evening 'passeggiata' particularly interesting.</p>" +
+                                "<p>Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed.</p>" +
+                                "<p>There are many fine shops here that make an early evening 'passeggiata' particularly interesting.</p>" +
                                 "<p><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Martina_Franca\">Visit Martina Franca on Wikipedia</a></p>" +
                                 "<p><a target=\"_blank\" href=\"http://www.festivaldellavalleditria.it\">Visit the Festival Della Valle d'Itria web-site</a></p>",
                     "image" : "",
