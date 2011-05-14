@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://trullove.com/</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-garden-1.png</image:loc>
+   <image:caption>Fici d'India</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-infinity-pool-7.png</image:loc>
+   <image:caption>Large Infinity Edge Swimming Pool</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-17.png</image:loc>
+   <image:caption>Traditional Apulian Stone Dwelling</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-kitchen-1.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - Fully Fitted Kitchen</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-garden-14.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - 20 Acres of Sun Baked Olive Groves</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-garden-figi-4.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - Figs</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-trullo-pool-1.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - Large Infinity Edge Swimming Pool</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-trulli.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - Large Villa for Rent</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-fico-d-india.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - 20 Acre Garden - Fico d'India</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-fici-d-india.png</image:loc>
+   <image:caption>Trullove Trulli - Puglia - Italy - 20 Acre Garden - Fici d'India</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-arco-di-sant-antonio.png</image:loc>
+   <image:caption>Martina Franca - Arco di San't Antonio</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-basilica-di-san-martino.png</image:loc>
+   <image:caption>Martina Franca - Basilica di San Martino</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-centro-storico.png</image:loc>
+   <image:caption>Martina Franca - Centro Storico</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-ducal-palace.png</image:loc>
+   <image:caption>Martina Franca - Ducal Palace</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+</url>
+<url>
+  <loc>http://trullove.com/property</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://trullove.com/property/accomodation-details</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://trullove.com/property/extra-services</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://trullove.com/property/local-information</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://trullove.com/region</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://trullove.com/region/towns</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-arco-di-sant-antonio.png</image:loc>
+   <image:caption>Martina Franca - Arco di San't Antonio</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-basilica-di-san-martino.png</image:loc>
+   <image:caption>Martina Franca - Basilica di San Martino</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-centro-storico.png</image:loc>
+   <image:caption>Martina Franca - Centro Storico</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/puglia-trulli-martina-franca-ducal-palace.png</image:loc>
+   <image:caption>Martina Franca - Ducal Palace</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-ceglie-1.png</image:loc>
+   <image:title>Ceglie Messapica, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Ceglie Messapica 1</image:caption>
+   <image:geo_location>Ceglie Messapica, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-ceglie-2.png</image:loc>   
+   <image:title>Ceglie Messapica, Puglia, Italy - </image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Ceglie Messapica 2</image:caption>
+   <image:geo_location>Ceglie Messapica, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-ceglie-5.png</image:loc>   
+   <image:title>Ceglie Messapica, Puglia, Italy - </image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Ceglie Messapica 5</image:caption>
+   <image:geo_location>Ceglie Messapica, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-cisternino-1.png</image:loc>   
+   <image:title>Cisternino, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Cisternino</image:caption>
+   <image:geo_location>Cisternino, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+  <image:loc>http://trullove.com/images/trullove-puglia-trulli-cisternino-7.png</image:loc>   
+   <image:title>Terrace Lunch - Cisternino, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Cisternino - Terrace</image:caption>
+   <image:geo_location>Cisternino, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-grottaglie-1.png</image:loc>   
+   <image:title>Grottaglie, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Grottaglie</image:caption>
+   <image:geo_location>Grottaglie, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-grottaglie-5.png</image:loc>   
+   <image:title>Grottaglie, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Grottaglie</image:caption>
+   <image:geo_location>Grottaglie, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-locorotondo-1.png</image:loc>   
+   <image:title>Locorotondo, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Locorotondo</image:caption>
+   <image:geo_location>Locorotondo, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-locorotondo-4.png</image:loc>   
+   <image:title>Locorotondo, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Locorotondo</image:caption>
+   <image:geo_location>Locorotondo, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-locorotondo-9.png</image:loc>   
+   <image:title>Locorotondo, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Locorotondo</image:caption>
+   <image:geo_location>Locorotondo, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-ostuni-1.png</image:loc>   
+   <image:title>Ostuni, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Ostuni</image:caption>
+   <image:geo_location>Ostuni, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image> 
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-ostuni-5.png</image:loc>   
+   <image:title>Ostuni, Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Ostuni</image:caption>
+   <image:geo_location>Ostuni, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+</url>
+<url>
+  <loc>http://trullove.com/region/markets</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-italian-shoes-1.png</image:loc>   
+   <image:title>Italian Shoes - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Italian Shoes</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-italian-shoes-2.png</image:loc>   
+   <image:title>Italian Shoes - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Italian Shoes</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-italian-produce.png</image:loc>   
+   <image:title>Produce - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Produce</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-eggplant.png</image:loc>   
+   <image:title>Eggplant - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Eggplant</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-1.png</image:loc>
+   <image:title>Clothing - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Clothing</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-4.png</image:loc>
+   <image:title>Italian Produce - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Produce</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-6.png</image:loc>
+   <image:title>Italian Fashion - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Fashion</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-7.png</image:loc>
+   <image:title>Eggplant - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Eggplant</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-8.png</image:loc>
+   <image:title>Limoni - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Limoni</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-markets-9.png</image:loc>   
+   <image:title>Fici d'India - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Fici d'India</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-10.png</image:loc>
+   <image:title>Figs - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Figs</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-11.png</image:loc>
+   <image:title>Tomatoes - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Tomatoes</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-12.png</image:loc>
+   <image:title>Peaches - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Peaches</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-13.png</image:loc>
+   <image:title>Italian Produce - Markets in Puglia, Italy</image:title>
+   <image:caption>Trullove Trulli - Puglia - Italy - Markets - Fresh Produce</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-14.png</image:loc>
+   <image:title>Italian Fashion Shopping on markets in Puglia, Italy</image:title>
+   <image:caption>Puglia - Italy - Markets - Italian Fashion</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-15.png</image:loc>
+   <image:title>Fresh Italian Produce from markets in Puglia, Italy</image:title>
+   <image:caption>Puglia - Italy - Markets - Fresh Produce - Bell Peppers, Eggplant</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-16.png</image:loc>
+   <image:title>Italian Fashion from markets in Puglia, Italy</image:title>
+   <image:caption>Puglia - Italy - Markets - Italian Fashion</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/trullove-puglia-trulli-markets-17.png</image:loc>
+   <image:title>Fresh Italian Produce from markets in Puglia, Italy</image:title>
+   <image:caption>Puglia - Italy - Markets - Fresh Produce - Zucchini</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+</url>
+<url>
+  <loc>http://trullove.com/region/getting-to-the-villa</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://trullove.com/region/map</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/bari-airport-departures.png</image:loc>
+   <image:title>Bari Airport Departures</image:title>
+   <image:caption>Puglia - Italy - Airports - Bari</image:caption>
+   <image:geo_location>Bari, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/lecce-city-square.png</image:loc>
+   <image:title>Bari Airport Departures</image:title>
+   <image:caption>Puglia - Italy - Lecce - City Square</image:caption>
+   <image:geo_location>Lecce, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/map-region-of-puglia.png</image:loc>
+   <image:title>Map of Puglia region in Italy</image:title>
+   <image:caption>Map of Puglia region n Italy</image:caption>
+   <image:geo_location>Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/martina-franca-arco-di-sant-antonio-2.png</image:loc>
+   <image:title>Arco di San't Antonio, Martina Franca, Apulia, Italy</image:title>
+   <image:caption>Arco di San't Antonio, Martina Franca, Apulia</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/martina-franca-basilica-di-san-martino.png</image:loc>
+   <image:title>Basilica di San Martino, Martina Franca, Apulia, Italy</image:title>
+   <image:caption>Basilica di San Martino, Martina Franca, Apulia</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/martina-franca-centro-storico.png</image:loc>
+   <image:title>Centro Storico, Martina Franca, Apulia, Italy</image:title>
+   <image:caption>Centro Storico, Martina Franca, Apulia</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/martina-franca-fish-and-chips.png</image:loc>
+   <image:title>Fish and Chips, Martina Franca, Apulia, Italy</image:title>
+   <image:caption>Fish and Chips, Martina Franca, Apulia</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+  <image:image>
+   <image:loc>http://trullove.com/images/thumbs/martina-franca-porto-santo-stefano.png</image:loc>
+   <image:title>Porto Santo Stefano, Martina Franca, Apulia, Italy</image:title>
+   <image:caption>Porto Santo Stefano, Martina Franca, Apulia</image:caption>
+   <image:geo_location>Martina Franca, Puglia, Italy</image:geo_location>
+   <image:family_friendly>Yes</image:family_friendly>
+  </image:image>
+</url>
+<url>
+  <loc>http://trullove.com/rates-and-availability</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://trullove.com/availability</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://trullove.com/terms-conditions</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.1</priority>
+</url>
+<url>
+  <loc>http://trullove.com/terms-and-conditions</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.1</priority>
+</url>
+<url>
+  <loc>http://trullove.com/booking</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://trullove.com/yourstrulli</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://trullove.com/Links</loc>
+  <lastmod>2011-04-04T09:12:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+</urlset>
