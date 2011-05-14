@@ -36,7 +36,8 @@
 
         if(this.data['url'])
         {
-            html += '<a href=\"' + this.data['url'] + '\">';
+            html += '<a href=\"' + this.data['url'] + '\" title=\"' +
+                this.data['name'] + '\" alt=\"' + this.data['name'] + '\">';
         }
 
         html += '<img src="' + this.data['src'] +

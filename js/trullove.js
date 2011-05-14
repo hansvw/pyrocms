@@ -187,6 +187,6 @@
 //        panoramioLayer5.setTag('monte trazzonara');
 //        panoramioLayer5.setMap(map);
 
-        var trafficLayer = new google.maps.TrafficLayer();
-        trafficLayer.setMap(map);
+/*        var trafficLayer = new google.maps.TrafficLayer();
+          trafficLayer.setMap(map); */
     }

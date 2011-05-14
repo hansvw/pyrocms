@@ -468,29 +468,59 @@ var markerjson =
                 {
                     "tabText" : "Martina Franca",
                     "divText" : "<p>Martina Franca has one of the finest old quarters in Puglia.  Baroque balconies decorated with ornate wrought iron look down on narrow alleyways that have hardly changed in centuries.</p>"+
-                                "<p>In the second  half of July and early August, the town stages the annual Festival della Vale d'Itria - a feast for opera lovers.</p>" +
+                                "<p>In the second  half of July and early August, the town stages the annual Festival della Valle d'Itria - a feast for opera lovers. The primary aim of the festival is to present obscure, " +
+                                "neglected or rarely performed works, and often works in the standard operatic repertoire are given in their original versions (such as Verdi’s original 1857 version of Simon Boccanegra).</p>" +
                                 "<p>Martina Franca is a town with a history that makes its wealth and fine architecture something not to be missed. There are many fine shops here that make an early evening 'passeggiata' particularly interesting.</p>" +
-                                "<a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Martina_Franca\">Visit Martina Franca on Wikipedia</a>",
+                                "<p><a target=\"_blank\" href=\"http://en.wikipedia.org/wiki/Martina_Franca\">Visit Martina Franca on Wikipedia</a></p>" +
+                                "<p><a target=\"_blank\" href=\"http://www.festivaldellavalleditria.it\">Visit the Festival Della Valle d'Itria web-site</a></p>",
                     "image" : "",
                     "slideshow" :
                     [
                         {
-                            "name": "Martina Franca Basilica",
+                            "name": "Martina Franca Centro Storico",
+                            "src" : "images/thumbs/martina-franca-centro-storico.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
+                        },
+                        {
+                            "name": "Martina Franca Basilica di San Martino",
+                            "src" : "images/thumbs/martina-franca-basilica-di-san-martino.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
+                        },
+                        {
+                            "name": "Martina Franca Basilica Arco di San't Antonio",
+                            "src" : "images/thumbs/martina-franca-arco-di-sant-antonio.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
+                        },
+                        {
+                            "name": "Martina Franca Basilica Fish and Chips",
+                            "src" : "images/thumbs/martina-franca-fish-and-chips.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
+                        },
+                        {
+                            "name": "Martina Franca Fashion in Centro Storico",
+                            "src" : "images/thumbs/martina-franca-fashion-in-centro-storico.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
+                        },
+                        {
+                            "name": "Martina Franca - Basilica",
                             "src" : "images/thumbs/martina-franca-basilica.png",
                             "url" : "region/towns",
                             "width" : 174,
                             "height" : 131
                         },
                         {
-                            "name": "Martina Franca Arco San Antonio",
-                            "src" : "images/thumbs/martina-franca-arco-san-antonio.png",
-                            "url" : "region/towns",
-                            "width" : 174,
-                            "height" : 131                            
-                        },
-                        {
-                            "name": "Martina Franca",
-                            "src" : "images/thumbs/martina-franca-3.png",
+                            "name": "Martina Franca - Ducal Palace",
+                            "src" : "images/thumbs/martina-franca-ducal-palace.png",
                             "url" : "region/towns",
                             "width" : 174,
                             "height" : 131
@@ -501,6 +531,20 @@ var markerjson =
                             "url" : "region/towns",
                             "width" : 174,
                             "height" : 131
+                        },
+                        {
+                            "name": "Martina Franca - Centro Storico",
+                            "src" : "images/thumbs/martina-franca-centro-storico-2.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 131
+                        },
+                        {
+                            "name": "Martina Franca - Porto Santo Stefano",
+                            "src" : "images/thumbs/martina-franca-porto-santo-stefano.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 232
                         }
                     ]
                 },
