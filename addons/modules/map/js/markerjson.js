@@ -91,7 +91,7 @@ var markerjson =
         },
         {
             "id" : "airportBrindisiMarker",
-            "imageFile" : "images/airport-icon-16x16.png",
+            "imageFile" : "images/airport-icon.png",
             "lat" : 40.65824,
             "lng" : 17.93921,
             "tabs" :
