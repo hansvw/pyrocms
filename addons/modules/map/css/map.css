@@ -14,10 +14,6 @@
     background-color: transparent;
 }
 
-.slideshow {width: 180px; height: 140px; margin: 0; padding: 0;}
-.slideshow a {display: none;}
-.slideshow img {margin: 0 0 0 10px; padding: 0; border: 1px solid #ccc; color: #fff; background-color: #eee;}
-
 .infotab
 {
     font-family: Arial, sans-serif; font-size: small;
@@ -48,3 +44,7 @@
     margin-right: 10px;
     text-align: justify;
 }
+
+.infotab .slideshow {width: 180px; height: 140px; margin: 0; padding: 0;}
+.infotab .slideshow a {display: none;}
+.infotab .slideshow img {margin: 0 0 0 10px; padding: 0; border: 1px solid #ccc; color: #fff; background-color: #eee;}
