@@ -85,7 +85,8 @@
             position: new google.maps.LatLng(this.markerdata.lat, this.markerdata.lng),
             animation: google.maps.Animation.DROP,
             map: map,
-            icon: this.markerdata.imageFile
+            icon: this.markerdata.imageFile,
+            optimized: false
         });
 
         var infoBubble = new InfoBubble(
