@@ -47,6 +47,7 @@ class Availability extends Public_Controller
             $this->calendarhtml.=$this->calendar->output_calendar($form_values->yearselection, $i, 'calendar', $reservationMap);
             $this->calendarhtml.="</li>\n";
         }
+        $this->calendarhtml.="</ol>";
 
         $this->template
 			->set('yearselections', $this->yearselections)
