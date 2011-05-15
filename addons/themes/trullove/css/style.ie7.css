@@ -185,3 +185,10 @@ div.art-layout-cell div.art-layout-cell
   margin-bottom: 0;
   padding-bottom: 0;
 }/* end LayoutCell, content */
+
+.markerTrulloveStyle
+{
+    position: relative;
+    left: -4px;
+    top: -5px;
+}
