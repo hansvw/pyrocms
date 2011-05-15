@@ -6,7 +6,7 @@
                 </div>
                 <div class="col2">
                     <div>
-                        <label for="yearselection"><?php echo lang('yearselection_label');?></label>
+                        <label for="yearselector"><?php echo lang('yearselection_label');?></label>
                         <?php echo form_dropdown('yearselection', $yearselections, $form_values->yearselection, $selectionjs); ?>
                         <input type="hidden" name="selectedyear" value="<?php echo $form_values->yearselection;?>" />
                     </div>
