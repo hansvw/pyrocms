@@ -83,7 +83,7 @@
         var marker = new google.maps.Marker(
         {
             position: new google.maps.LatLng(this.markerdata.lat, this.markerdata.lng),
-/*            animation: google.maps.Animation.DROP, */
+            animation: google.maps.Animation.DROP,
             map: map,
             icon: this.markerdata.imageFile
         });
@@ -95,20 +95,6 @@
             maxWidth: 620,
             padding: 10
         });
-
-//        google.maps.event.addListener(infoBubble, 'domready', function()
-//        {
-//            if($('.slideshow'))
-//            {
-//                $('.slideshow').show();
-//                $('.slideshow').cycle(
-//                {
-//                    fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-//                    speed: 400,
-//                    timeout: 3000
-//                });
-//            }
-//        });
 
         for(var i = 0; i < this.markerdata['tabs'].length; i++)
         {
@@ -132,8 +118,8 @@
 
             div.innerHTML = html;
 
-            infoBubble.addTab("<span class=\"markerTrulloveStyle\">" + this.markerdata['tabs'][i].tabText + "</span>", div);
-            // infoBubble.addTab(this.markerdata['tabs'][i].tabText, div);
+            infoBubble.addTab("<span class=\"markerTrulloveStyle\">" +
+                this.markerdata['tabs'][i].tabText + "</span>", div);
         }
         
         google.maps.event.addListener(marker, 'click', function()
