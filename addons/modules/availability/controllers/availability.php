@@ -17,7 +17,7 @@ class Availability extends Public_Controller
         	'2011' => '2011',
         	'2012' => '2012',
         	'2013' => '2013');
-        $this->selectionjs = 'id="yearselector" onChange="this.form.submit();"';
+        $this->selectionjs = 'id="yearselector" onchange="this.form.submit();"';
         $this->template->append_metadata( css('availability.css', 'availability') );
 	}
 
