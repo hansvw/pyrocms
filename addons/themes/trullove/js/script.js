@@ -168,7 +168,7 @@ function artGetStyleUrl() {
 }
 
 function artFixPNG(element) {
-/*	if (artBrowser.msie && artBrowser.version < 7) {
+	if (artBrowser.msie && artBrowser.version < 7) {
 		var src;
 		if (element.tagName == 'IMG') {
 			if (/\.png$/.test(element.src)) {
@@ -184,7 +184,7 @@ function artFixPNG(element) {
 			}
 		}
 		if (src) element.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "')";
-	} */
+	}
 }
 
 function artHasClass(el, cls) {
