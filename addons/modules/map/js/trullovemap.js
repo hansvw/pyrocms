@@ -83,7 +83,7 @@
         var marker = new google.maps.Marker(
         {
             position: new google.maps.LatLng(this.markerdata.lat, this.markerdata.lng),
-            animation: google.maps.Animation.DROP,
+/*            animation: google.maps.Animation.DROP, */
             map: map,
             icon: this.markerdata.imageFile
         });

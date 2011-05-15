@@ -1,14 +1,11 @@
 /*
  * trullove.js
  */
-	var alreadyRun = false;
 
-    window.onload = function() 
+    $(document).ready(function()
     {
-      if (alreadyRun) {return;}
-      alreadyRun = true;
-      initialize();
-    };
+        initialize();
+    });
 
 /**
   * Syntactic sugar for methods.
