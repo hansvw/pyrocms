@@ -1,7 +1,6 @@
 /*
  * trullove.js
  */
-
     $(document).ready(function()
     {
         initialize();

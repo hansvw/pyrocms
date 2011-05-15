@@ -1,7 +1,3 @@
-/* begin Page */
-
-/* Generated with Artisteer version 2.5.0.31067, file checksum is 6FD4609D. */
-
 // required for IE7, #150675
 if (window.addEvent) window.addEvent('domready', function() { });
 

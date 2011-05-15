@@ -6,8 +6,8 @@ class Map extends Public_Controller
 	{
 		parent::Public_Controller();
 		$this->lang->load('map');
-        $this->template->append_metadata( '<meta keywords="Interactive Map, Pulia, Apulia, Italy, Map, Google Map, Martina Franca, Ostuni, Locorotondo, Ceglie Messapica, Cisternino, Bari, Brindisi, Trullove Trulli" />')
-                       ->append_metadata( '<meta description="Interactive Map of Puglia, Italy with information about Martina Franca, Ostuni, Locorotondo, Ceglie Messapica, Cisternino, Bari, Brindisi and the Trullove Trulli" />')
+        $this->template->append_metadata( '<meta name="keywords" content="Interactive Map, Pulia, Apulia, Italy, Map, Google Map, Martina Franca, Ostuni, Locorotondo, Ceglie Messapica, Cisternino, Bari, Brindisi, Trullove Trulli" />')
+                       ->append_metadata( '<meta name="description" content="Interactive Map of Puglia, Italy with information about Martina Franca, Ostuni, Locorotondo, Ceglie Messapica, Cisternino, Bari, Brindisi and the Trullove Trulli" />')
                        ->append_metadata( '<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />')
                        ->append_metadata( css('map.css', 'map'))
                        ->append_metadata( js('http://maps.google.com/maps/api/js?sensor=false'))
