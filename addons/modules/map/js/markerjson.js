@@ -658,6 +658,63 @@ var markerjson =
             ]
         },
         {
+            "id" : "Monopoli",
+            "imageFile" : "images/pushpin.png",
+            "lat" : 40.9147,
+            "lng" : 17.2951,
+            "tabs" :
+            [
+                {
+                    "tabText" : "Monopoli",
+                    "divText" : "<p>Monopoli, also known as the the city of 100 districts, is located on a coastal Adriatic route with splendid beaches and coves. " +
+                                "The town has a small historic quarter centered around the Castle of Charles V.</p>" +
+                                "<p>The town was under Norman, Byzantine, Swabian, Venetian and Austrian rule, each leaving their mark, before being ruled by Naples and finally " +
+                                "becoming part of the Kingdom of Italy.</p>" +
+                                "<p>Main sights: Castello di Carlo V (1522), the coastal castle of St. Stephen (1086), the  Jerusalem Hospital (1350), the Palazzo Palmieri (18th Century), Cattedrale di Monopoli, Centro Storico and Porto Antico.</p>" +
+                                "<p><a href=\"http://en.wikipedia.org/wiki/Monopoli\" target=\"_blank\">Visit Monopoli on Wikipedia</a></p>",
+                    "image" : "",
+                    "slideshow" :
+                    [
+                        {
+                            "name": "Monopoli - Clear Blue Sea",
+                            "src" : "images/thumbs/monopoli-clear-blue-sea-2.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 200
+                        },
+                        {
+                            "name": "Monopoli - Fishing Boats",
+                            "src" : "images/thumbs/monopoli-fishing-boats.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 200
+                        },
+                        {
+                            "name" : "Monopoli - Narrow Streets",
+                            "src" : "images/thumbs/monopoli-narrow-streets-4.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 200
+                        },
+                        {
+                            "name" : "Monopoli - Blue Fishing Boats",
+                            "src" : "images/thumbs/monopoli-fishing-boats-3.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 200
+                        },
+                        {
+                            "name" : "Monopoli - Baroque Cathedral",
+                            "src" : "images/thumbs/monopoli-baroque-cathedral.png",
+                            "url" : "region/towns",
+                            "width" : 174,
+                            "height" : 200
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id" : "OstuniMarker",
             "imageFile" : "images/pushpin.png",
             "lat" : 40.728657,
@@ -678,7 +735,7 @@ var markerjson =
                             "width" : 174,
                             "height" : 131
                         },
-                                                {
+                        {
                             "name": "Ostuni",
                             "src" : "images/thumbs/trullove-puglia-ostuni-5.png",
                             "url" : "region/towns",
