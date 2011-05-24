@@ -6,8 +6,8 @@ var markerjson =
         {
             "id" : "trulloveMarker",
             "imageFile" : "images/trullove-marker.png",
-            "lat" : 40.624580,
-            "lng" : 17.40206,
+            "lat" : 40.61686,
+            "lng" : 17.38334,
             "tabs" :
             [
                 {
@@ -66,8 +66,8 @@ var markerjson =
                                 "<p>Ryanair flies daily to both, from London Stansted, all year round. British Airways flies from Gatwick to Bari twice a week from April to October. Ryanair flies from Brussels Charleroi to Brindisi three times a week, all year round and to Bari three times a week, from April till October. Ryanair also flies from Eindhoven Airport to Brindisi twice a week, from March till October and to Bari.</p>" +
                                 "<p>Trullove is located in the hills near Martina Franca.  It's a 50 minute drive from Brindisi Airport and an hour and a half from Bari Airport.</p>" +
                                 "<p>Detailed directions will be provided upon confirmation of booking.</p>" +
-                        "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Brindisi+Airport,+Brindisi,+Italy&daddr=Strada+Trazzonara&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFUrjawIdPIcJAQ&mra=dme&mrsp=1&sz=16&sll=40.6248,17.403996&sspn=0.008159,0.011137&ie=UTF8&ll=40.61291,17.637177&spn=0.533759,0.881653&z=10\">Driving Directions from Brinidisi Airport</a>" +
-                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Driving Directions from Bari Airport</a>",
+                        "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=brindisi+Airport,+Brindisi,+Italy&daddr=Martina+Franca,+Italy&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFfEYbQIdVoIIASljSrk-ClNGEzF_GiiWOGETxw&mra=ls&sll=40.822716,17.211069&sspn=0.974778,1.674042&layer=t&ie=UTF8&t=p&z=10\">Driving Directions from Brindisi Airport to Martina Franca</a>" +
+                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Martina+Franca,+Italy&hl=en&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFfEYbQIdVoIIASljSrk-ClNGEzF_GiiWOGETxw&mra=ls&sll=40.920777,17.061768&sspn=0.486672,0.837021&layer=t&ie=UTF8&t=p&z=9\">Driving Directions from Bari Airport to Martina Franca</a>",
                     "image" : "",
                     "slideshow" :
                     [
@@ -100,7 +100,7 @@ var markerjson =
                     "tabText" : "Brindisi Airport",
                     "divText" : "<p>Ryanair flies daily to Brindisi Airport, from London Stansted, all year round and from Brussels Charleroi three times a week, all year round. Ryanair also flies from Eindhoven Airport to Brindisi twice a week, from March till October. Trullove is located in the hills near Martina Franca.  It's a 50 minute drive from Brindisi Airport. Detailed directions will be provided upon confirmation of booking.</p>" +
                         "<a href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=29\" target=\"_blank\">Brindisi Airport Website</a>" +
-                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Brindisi+Airport,+Brindisi,+Italy&daddr=Strada+Trazzonara&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFUrjawIdPIcJAQ&mra=dme&mrsp=1&sz=16&sll=40.6248,17.403996&sspn=0.008159,0.011137&ie=UTF8&ll=40.61291,17.637177&spn=0.533759,0.881653&z=10\">Google Driving Directions from Brindisi Airport</a>",
+                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=brindisi+Airport,+Brindisi,+Italy&daddr=Martina+Franca,+Italy&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFfEYbQIdVoIIASljSrk-ClNGEzF_GiiWOGETxw&mra=ls&sll=40.822716,17.211069&sspn=0.974778,1.674042&layer=t&ie=UTF8&t=p&z=10\">Driving Directions from Brindisi Airport to Martina Franca</a>",
                     "image" : "images/brindisi_airport.jpg",
                     "slideshow" : 
                     [
@@ -127,12 +127,6 @@ var markerjson =
                         }
                     ]
                 }
-                /*,
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Brindisi+Airport,+Brindisi,+Italy&daddr=Strada+Trazzonara&hl=en&geocode=FT52bAIdOsgRASFLo0xBL23pZg%3BFUrjawIdPIcJAQ&mra=dme&mrsp=1&sz=16&sll=40.6248,17.403996&sspn=0.008159,0.011137&ie=UTF8&ll=40.61291,17.637177&spn=0.533759,0.881653&z=10\">Driving Directions</a>",
-                    "image" : ""
-                } */
             ]
         },
         {
@@ -146,7 +140,7 @@ var markerjson =
                     "tabText" : "Bari Airport",
                     "divText" : "<p>Ryanair flies daily to Bari Airport, from London Stansted, all year round. British Airways flies from Gatwick twice a week from April to October. Ryanair flies from Brussels Charleroi to Bari three times a week from April till October.  Lufthansa flies daily from Munich as well. Trullove is located in the hills near Martina Franca.  It's a an hour and a half drive from Bari Airport. Detailed directions will be provided upon confirmation of booking.</p>" +
                         "<a target=\"_blank\" href=\"http://www.aeroportidipuglia.it/default.asp?idlingua=2&idcontenuto=25\">Bari Airport Website</a>" +
-                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Google Driving Directions from Bari Airport</a>",
+                        "<br /><br /><a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Martina+Franca,+Italy&hl=en&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFfEYbQIdVoIIASljSrk-ClNGEzF_GiiWOGETxw&mra=ls&sll=40.74886,17.642305&sspn=0.487936,0.837021&layer=t&ie=UTF8&ll=40.920777,17.061768&spn=0.486672,0.837021&t=p&z=9\">Driving Directions from Bari Airport to Martina Franca</a>",
                     "image" : "images/bari_airport.jpg",
                     "slideshow" :
                     [
@@ -166,12 +160,6 @@ var markerjson =
                         }
                     ]
                 }
-                /*,
-                {
-                    "tabText" : "Driving Directions",
-                    "divText" : "<a target=\"_blank\" href=\"http://maps.google.com/maps?f=d&source=s_d&saddr=Bari+Airport,+Bari,+Italy&daddr=Strada+Trazzonara&geocode=FWS1cwIdEtH_ACECG_DmOKe60A%3BFUrjawIdPIcJAQ&hl=en&mra=ls&sll=40.880295,17.148285&sspn=0.531617,0.881653&ie=UTF8&ll=40.813809,17.306213&spn=1.105873,1.925354&z=9\">Google Driving Directions from Bari Airport</a>",
-                    "image" : ""
-                } */
             ]
         },
         {
