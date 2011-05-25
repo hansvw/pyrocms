@@ -6,8 +6,8 @@ var markerjson =
         {
             "id" : "trulloveMarker",
             "imageFile" : "images/trullove-marker.png",
-            "lat" : 40.61686,
-            "lng" : 17.38334,
+            "lat" : 40.66298,
+            "lng" : 17.42125,
             "tabs" :
             [
                 {
